@@ -6,4 +6,4 @@ const colors = {
     GRUEPR_YELLOW: 'FFD771'
 
 };
-export {colors};
+export default {colors};
