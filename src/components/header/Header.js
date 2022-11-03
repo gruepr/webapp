@@ -1,15 +1,5 @@
-import {StyledGrueprLogo} from './Header.styles'
-
 const Header = () => {
-    return (
-        <StyledGrueprLogo>
-
-            Gruepr
-        </StyledGrueprLogo>
-
-
-    )
-}
+  return <div className="text-2xl paytone text-gblue">Gruepr</div>;
+};
 
 export default Header;
-
