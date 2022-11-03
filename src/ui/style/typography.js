@@ -1,16 +1,14 @@
-import colors from './colors'
-import styled from 'styled-components'
-
+import colors from "./colors";
+import styled from "styled-components";
 
 const fonts = {
-    paytoneRegular: 'Paytone-Regular'
+  paytoneRegular: "Paytone One",
 };
 
-
 const H1 = styled.h1`
-    font-familyL ${fonts.paytoneRegular};
-    color: ${colors.GRUEPR_BLUE}
-    font-size: 10em;
+  font-family: ${fonts.paytoneRegular};
+  color: ${colors.GRUEPR_BLUE};
+  font-size: 10em;
 `;
 
-export {fonts, H1};
+export { fonts, H1 };
