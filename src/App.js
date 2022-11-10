@@ -1,7 +1,6 @@
 import './App.css';
 import Home from './components/Home'
-import Hero from './components/hero/Hero.js'
-
+import Hero from './components/hero/Hero'
 
 
 
