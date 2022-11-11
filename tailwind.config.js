@@ -7,8 +7,30 @@ module.exports = {
         gblue: "#13A9B2",
         dark: "#053437",
         gyellow: "#053437",
+        yellow50: "FFFBF1"
       },
+
+      screens: {
+        'mobile': '320px',
+  
+        'tablet': '768px',
+  
+        'laptop': '1024px',
+  
+        'desktop': '1440px',
+  
+        'desktopMax': '1920px',
+      },
+
+      backgroundImage: {
+        'home-hero-bg': "url('../img/hero-bg.svg')"
+      }
+
+
+    
     },
   },
   plugins: [],
 };
+
+
