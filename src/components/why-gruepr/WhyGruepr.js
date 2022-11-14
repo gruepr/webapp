@@ -5,7 +5,7 @@ const WhyGruepr = () => {
     return (
         <div>
             <row>
-                <h1>Why Gruepr</h1>
+                <h1 class=" text-center text-3xl text-dark font-bold drop-shadow-lg dmsans pt-10">Why choose Gruepr?</h1>
           {CARD.map((whygruepr, index) => (
                 <WhyGrueprCard
                 img={whygruepr.img}
