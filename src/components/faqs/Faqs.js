@@ -1,10 +1,15 @@
 import Header from "../header/Header";
+import Questions from '../faqs/Questions'
 
 const Faqs = () => {
   return (
     <div>
       <Header />
-      <h1> FAQ section!!!!!</h1>
+      <div class="bg-faq-bg">
+        <h1 class=" px-20 py-20 text-3xl text-dark font-bold drop-shadow-lg dmsans ">How Gruepr works</h1>
+        <Questions/>
+      </div>
+
     </div>
   );
 };
