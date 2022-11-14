@@ -1,6 +1,4 @@
-import { Route, Routes } from "react-router";
 import { Link } from "react-router-dom";
-import FAQs from "../faq-page/Faqs";
 
 const Header = () => {
   return (
