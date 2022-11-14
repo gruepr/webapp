@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <body>
             <header
-                className="w-full h-96 bg-[url('https://www.kindacode.com/wp-content/uploads/2022/06/hero-image-example.jpeg')] bg-cover bg-center flex justify-center items-center">
+                className="w-full h-96 bg-home-hero-bg bg-cover bg-center flex justify-center items-center">
                 <div class="flex flex-col justify-center items-center">
                     <h1 class=" text-center text-5xl text-white font-bold drop-shadow-lg paytone">Sort your students into the most optimal groups
                     </h1>
