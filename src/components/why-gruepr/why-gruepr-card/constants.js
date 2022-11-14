@@ -3,7 +3,6 @@ import glasses from '../../../img/glasses.svg'
 import security from '../../../img/security.svg'
 
 
-
 export const CARD = [
     {
         img: clipboard,
