@@ -1,5 +1,5 @@
 import Header from "../header/Header";
-import Questions from '../faqs/Questions'
+import Questions from './Questions'
 
 const Faqs = () => {
   return (

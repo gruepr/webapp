@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import { BrowserRouter, Link } from "react-router-dom";
-import FAQs from "../faqs/Faqs";
+import FAQs from "../faq-page/Faqs";
 
 const Header = () => {
   return (
