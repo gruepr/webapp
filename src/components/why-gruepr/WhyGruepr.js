@@ -4,8 +4,8 @@ import WhyGrueprCard from "./why-gruepr-card/WhyGrueprCard";
 const WhyGruepr = () => {
     return (
         <div>
-            <row>
-                <h1 class=" text-center text-3xl text-dark font-bold drop-shadow-lg dmsans pt-10">Why choose Gruepr?</h1>
+            <h1 class=" text-center text-3xl text-dark font-bold drop-shadow-lg dmsans pt-10">Why choose Gruepr?</h1>
+          <div class=" ">
           {CARD.map((whygruepr, index) => (
                 <WhyGrueprCard
                 img={whygruepr.img}
@@ -13,7 +13,9 @@ const WhyGruepr = () => {
                 info={whygruepr.info}
               />
           ))}
-          </row>
+
+          </div>
+         
 
         </div>
 
