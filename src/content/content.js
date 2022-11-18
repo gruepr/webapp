@@ -1,3 +1,5 @@
+// all of the text content for the website
+
 export default {
   emailText: "info@gruepr.com",
 
@@ -19,7 +21,6 @@ export default {
 
   // ----- Home page ----- //
   home: {
-    // Hero
     hero: {
       header: "Sort your students into the most optimal grueps",
       text: `Use our survey maker to collect information from your students, upload to gruepr, and our 
@@ -27,7 +28,6 @@ export default {
       button: "Download gruepr",
     },
 
-    // Why gruepr
     whyGruepr: {
       flexibleHeader: "gruepr is flexible",
       flexibleText: `Instructors can include whatever questions they would like to use to help form teams, 
@@ -43,45 +43,48 @@ export default {
         "It will remain always free of cost, free from ads, and free from selling of any data.",
     },
 
-    // Features
-    createSurveyHeader: "Create custom surveys",
-    createSurveyText: `Fill out our form building questionaire to create the perfect survey for your class.
+    features: {
+      createSurveyHeader: "Create custom surveys",
+      createSurveyText: `Fill out our form building questionaire to create the perfect survey for your class.
      Select the types of questions and responses you want to include in your survey and let gruepr do the rest!`,
 
-    teamCompatibilityHeader: "Maximize team compatibility",
-    teamCompatibilityText: `Upload your .csv, select your parameters, and have the gruepings appear right before your eyes!
+      teamCompatibilityHeader: "Maximize team compatibility",
+      teamCompatibilityText: `Upload your .csv, select your parameters, and have the gruepings appear right before your eyes!
       We help to maximize team productivity by pairing students with similar goals and skill sets.`,
 
-    freeOpenSourceHeader: "Free and open source, always",
-    freeOpenSourceText:
-      "Our powerful genetic matching algorithm is available to instructors, completely free and open source.",
+      freeOpenSourceHeader: "Free and open source, always",
+      freeOpenSourceText:
+        "Our powerful genetic matching algorithm is available to instructors, completely free and open source.",
+    },
 
-    // Trusted
+    // Trusted section
     trustedHeader: "Trusted by 35+ schools",
   },
 
   // ----- FAQ page ----- //
   faq: {
-    // How gruepr works
-    howGrueprWorks: "How gruepr works",
-    overview: "Overview",
-    surveyMakerOverview: "SurveyMaker Overview",
-    grueprOverview: "gruepr Overview",
-    surveyMakerAttributes: "SurveyMaker Attributes",
-    surveyMakerTimezoneSched: "SurveyMaker Timezone & Schedule",
+    howGrueprWorks: {
+      header: "How gruepr works",
+      appOverview: "Full App Overview",
+      surveyMakerOverview: "SurveyMaker Overview",
+      grueprOverview: "gruepr Overview",
+      surveyMakerAttributes: "SurveyMaker Attributes",
+      surveyMakerTimezoneSched: "SurveyMaker Timezone & Schedule",
+    },
 
-    // FAQs
-    faqHeader: "FAQ",
-    setNameQuestion: "How do I set the name of each team?",
-    makeSurveyQuestion: "What if I want to make my own survey question(s)?",
-    changeTeamsQuestion:
-      "Can I make changes to the teams after they've been created?",
-    weightedRulesQuestion: "How do the weighted rules work?",
-    attributesQuestion: "What do the Required/Incompatible Attributes mean?",
+    faqQuestions: {
+      header: "FAQ",
+      setName: "How do I set the name of each team?",
+      makeSurvey: "What if I want to make my own survey question(s)?",
+      changeTeams:
+        "Can I make changes to the teams after they've been created?",
+      weightedRules: "How do the weighted rules work?",
+      attributes: "What do the Required/Incompatible Attributes mean?",
+    },
 
-    // Legal Side
-    legalHeader: "The Legal Side",
-    legalText: `This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+    legal: {
+      header: "The Legal Side",
+      text: `This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
       without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. \n
       No personal data about or from gruepr's users will ever be intentionally shared. 
       For more information, we have a complete privacy policy. \n
@@ -90,6 +93,7 @@ export default {
       These icons have been made available under the creative commons license: Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0). \n
       An embedded font is used in gruepr, mostly for pdf and printer output: 
       Oxygen Mono, Copyright (C) 2012, Vernon Adams (vern@newtypography.co.uk) released under SIL OPEN FONT LICENSE V1.1. `,
+    },
   },
 
   // ----- About Us page ----- //
