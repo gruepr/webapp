@@ -8,6 +8,7 @@ const Header = () => {
         <div className="text-base font-bold dmsans text-neutral-500 space-x-4">
           <Link to="/">Home</Link>
           <Link to="/Faqs">FAQs</Link>
+          <Link to="/AboutUs">About Us</Link>
         </div>
       </div>
       <div className="float-right flex items-center justify-center h-20 space-x-8">
