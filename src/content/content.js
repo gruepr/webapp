@@ -29,6 +29,8 @@ export default {
     },
 
     whyGruepr: {
+      header: "Why gruepr?",
+
       flexibleHeader: "gruepr is flexible",
       flexibleText: `Instructors can include whatever questions they would like to use to help form teams, 
       and the algorithm can use the survey data in a variety of instructor-chosen ways.`,
