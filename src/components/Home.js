@@ -10,9 +10,8 @@ const Home = () => {
       <Header />
       <Hero />
       <WhyGruepr />
-      <TrustedSchools/>
+      <TrustedSchools />
       <Footer />
-
     </div>
   );
 };
