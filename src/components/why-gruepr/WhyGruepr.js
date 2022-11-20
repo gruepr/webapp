@@ -4,7 +4,7 @@ import WhyGrueprCard from "./why-gruepr-card/WhyGrueprCard";
 const WhyGruepr = () => {
   return (
     <div>
-      <h2 class="heading2">Why choose Gruepr?</h2>
+      <h2 class="heading2 text-center">Why choose Gruepr?</h2>
       <div class=" ">
         {CARD.map((whygruepr, index) => (
           <WhyGrueprCard
