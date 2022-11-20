@@ -42,4 +42,12 @@
 
 @layer components {
   /* add button styling here */
+  .primary-button {
+    @apply bg-neutral-500 py-4 px-8 text-base font-bold dmsans text-white;
+  }
+
+  .secondary-button {
+    @apply bg-white py-4 px-8 text-base font-bold dmsans text-neutral-500;
+  }
+  
 }
