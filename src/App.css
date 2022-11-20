@@ -10,4 +10,12 @@
   font-family: "DM Sans", sans-serif;
 }
 
+@layer base {
+  .heading1 {
+    @apply text-center text-5xl text-white font-bold paytone;
+  }
+}
 
+@layer components {
+  /* add button styling here */
+}
