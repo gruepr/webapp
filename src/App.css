@@ -12,15 +12,31 @@
 
 @layer base {
   .heading1 {
-    @apply text-center text-56 leading-72 text-white font-bold paytone;
+    @apply text-56 leading-72 text-white paytone;
   }
 
   .heading2 {
-    @apply text-center text-42 leading-56 text-white font-bold paytone;
+    @apply text-42 leading-56 text-neutral-500 font-bold dmsans;
   }
 
   .heading3 {
-    @apply text-center text-42 leading-56 text-white font-bold paytone;
+    @apply text-24 leading-32 text-neutral-500 font-medium dmsans;
+  }
+
+  .body {
+    @apply text-16 leading-24 text-neutral-500 dmsans;
+  }
+
+  .button-text {
+    @apply text-16 leading-24 text-neutral-500 font-bold dmsans;
+  }
+
+  .link {
+    @apply text-16 leading-24 text-neutral-500 font-bold underline dmsans;
+  }
+
+  .caption {
+    @apply text-12 leading-16 text-neutral-500 dmsans;
   }
 }
 

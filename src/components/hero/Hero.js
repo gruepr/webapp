@@ -8,12 +8,12 @@ const Hero = () => {
           <h1 class="heading1">
             Sort your students into the most optimal groups
           </h1>
-          <p class="mt-5 text-center text-lg text-dark  dmsans pt-4 pb-8">
+          <p class="heading3">
             Use our survey maker to collect information from your students,
             upload to gruepr, and our algorithm will find you the best set of
             teams.
           </p>
-          <button className="bg-white py-4 px-8 text-base font-bold dmsans text-dark ">
+          <button className="bg-white py-4 px-8 button-text">
             <a onClick={() => console.log("FAQs")}>Download Gruepr</a>
           </button>
         </div>
