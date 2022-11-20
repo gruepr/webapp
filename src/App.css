@@ -12,7 +12,15 @@
 
 @layer base {
   .heading1 {
-    @apply text-center text-5xl text-white font-bold paytone;
+    @apply text-center text-56 leading-72 text-white font-bold paytone;
+  }
+
+  .heading2 {
+    @apply text-center text-42 leading-56 text-white font-bold paytone;
+  }
+
+  .heading3 {
+    @apply text-center text-42 leading-56 text-white font-bold paytone;
   }
 }
 

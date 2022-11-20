@@ -3,6 +3,22 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        56: "56px",
+        42: "42px",
+        32: "32px",
+        24: "24px",
+        12: "12px",
+      },
+
+      lineHeight: {
+        72: "72px",
+        56: "56px",
+        32: "32px",
+        24: "24px",
+        16: "16px",
+      },
+
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -55,11 +71,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-
-
-
-    require('@tailwindcss/aspect-ratio')
-
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
