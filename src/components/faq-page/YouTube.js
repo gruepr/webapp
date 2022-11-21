@@ -1,11 +1,15 @@
+import content from "../../content/content";
+
 export const YouTube = () => {
   return (
     <div>
       <div className="flex flex-row">
         <div className="px-20 ">
-          <h1 class="py-5 body font-bold">Full App Overview</h1>
+          <h1 class="py-5 body font-bold">
+            {content.faq.howGrueprWorks.appOverview}
+          </h1>
           <iframe
-            width="270"
+            width="300"
             height="200"
             src="https://www.youtube.com/embed/Ja-PF068tII"
             title="YouTube video player"
@@ -15,11 +19,13 @@ export const YouTube = () => {
           ></iframe>
         </div>
         <div className="px-20">
-          <h1 class="py-5 body font-bold">Survey Maker Overview</h1>
+          <h1 class="py-5 body font-bold">
+            {content.faq.howGrueprWorks.surveyMakerOverview}
+          </h1>
           <iframe
-            width="270"
+            width="300"
             height="200"
-            src="https://www.youtube.com/embed/acS6Kj7gW2A"
+            src="https://youtu.be/acS6Kj7gW2A"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -27,11 +33,13 @@ export const YouTube = () => {
           ></iframe>
         </div>
         <div className="px-20">
-          <h1 class="py-5 body font-bold">Gruepr Overview</h1>
+          <h1 class="py-5 body font-bold">
+            {content.faq.howGrueprWorks.grueprOverview}
+          </h1>
           <iframe
-            width="270"
+            width="300"
             height="200"
-            src="https://www.youtube.com/embed/1ax-g0Ut1Ak"
+            src="https://www.youtube.com/embed/Ja-PF068tII"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -42,25 +50,27 @@ export const YouTube = () => {
       <div className="flex flex-row">
         <div>
           <div className="px-20">
-            <h1 class="py-5 body font-bold">SurveyMaker Attributes</h1>
+            <h1 class="py-5 body font-bold">
+              {content.faq.howGrueprWorks.surveyMakerAttributes}
+            </h1>
             <iframe
-              width="270"
+              width="300"
               height="200"
-              src="https://www.youtube.com/embed/sfaKpslFSbE"
+              src="https://youtu.be/sfaKpslFSbE"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-            ></iframe>{" "}
+            ></iframe>
           </div>
           <div className="px-20">
             <h1 class="py-5 body font-bold">
-              SurveyMaker Timezone and Schedule
+              {content.faq.howGrueprWorks.surveyMakerTimezoneSched}
             </h1>
             <iframe
-              width="270"
+              width="300"
               height="200"
-              src="https://www.youtube.com/embed/kUMC3_nFA20"
+              src="https://youtu.be/kUMC3_nFA20"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
