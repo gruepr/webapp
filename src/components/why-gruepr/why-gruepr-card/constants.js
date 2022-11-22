@@ -1,31 +1,23 @@
-import clipboard from '../../../img/clipboard.svg'
-import glasses from '../../../img/glasses.svg'
-import security from '../../../img/security.svg'
-
+import clipboard from "../../../img/clipboard.svg";
+import glasses from "../../../img/glasses.svg";
+import security from "../../../img/security.svg";
+import content from "../../../content/content";
 
 export const CARD = [
-    {
-        img: clipboard,
-        header: "gruepr is flexible",
-        info: "Instructors can include whatever questions they would like to use to help form teams, and the algorithm can use the survey data in a variety of instructor-chosen ways."
-        
-    },
-    {
-        img: security,
-        header: "gruepr keeps your data private",
-        info: "Instructors can include whatever questions they would like to use to help form teams, and the algorithm can use the survey data in a variety of instructor-chosen ways."
-        
-       
-    },
+  {
+    img: clipboard,
+    header: content.home.whyGruepr.flexibleHeader,
+    info: content.home.whyGruepr.flexibleText,
+  },
+  {
+    img: security,
+    header: content.home.whyGruepr.privacyHeader,
+    info: content.home.whyGruepr.privacyText,
+  },
 
-       
-    {
-       img: glasses,
-        header: "gruepr was created by an educator for fellow educators",
-        info: "It will remain always free of cost, free from ads, and free from selling of any data."
-
-        
-    },
-   
-
-]
+  {
+    img: glasses,
+    header: content.home.whyGruepr.forEducatorsHeader,
+    info: content.home.whyGruepr.forEducatorsText,
+  },
+];

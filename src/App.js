@@ -3,7 +3,8 @@ import Home from "./components/Home";
 import Faqs from "./components/faq-page/Faqs";
 import AboutUs from './components/about-us/AboutUs';
 import * as React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import AboutUs from "./components/about-us/AboutUs";
 
 function App() {
   return (
@@ -13,11 +14,6 @@ function App() {
         <Route path="/Faqs" element={<Faqs />} />
         <Route path="/AboutUs" element={<AboutUs />} />
 
-        {/* <Route path="download" element={<Download />} /> */}
-      </Routes>
-    </div>
-  );
-}
 
 
 
