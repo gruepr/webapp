@@ -1,8 +1,9 @@
 import Header from "../header/Header";
 import Hero from "./hero/Hero";
 import WhyGruepr from "./why-gruepr/WhyGruepr.js";
-import Footer from "../footer/Footer.js";
+import Features from "./features/Features.js";
 import TrustedSchools from "./trusted-schools/TrustedSchools";
+import Footer from "../footer/Footer.js";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Hero />
       <WhyGruepr />
+      <Features />
       <TrustedSchools />
       <Footer />
     </div>
