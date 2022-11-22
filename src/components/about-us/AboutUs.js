@@ -1,13 +1,28 @@
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
-import content from "../../content/content";
+import { Link } from "react-router-dom";
+import Header from "../header/Header"
+import AboutJosh from "./AboutJosh";
+import Footer from "../footer/Footer"
+
+
+import Contact from "../about-us/Contact"
+
+
 
 const AboutUs = () => {
   return (
     <div>
-      <Header />
-      <h1> {content.aboutUs.backstory.header}</h1>
-      <p> {content.aboutUs.backstory.text}</p>
+              <Header/>
+              <AboutJosh/>
+              <Contact/>
+              <Footer/>
+
+    
+    </div>
+
+  );
+
+
+
 
       <h1 class=" px-20 pb-5 text-3xl text-dark font-bold drop-shadow-lg dmsans ">
         {content.aboutUs.contact.header}

@@ -52,12 +52,11 @@ module.exports = {
       backgroundImage: {
         "home-hero-bg": "url('../src/img/hero-bg.svg')",
         "faq-bg": "url('../src/img/faq-bg.svg')",
+        "contact-bg" : "url('../src/img/contact-us.svg')",
       },
     },
   },
   plugins: [
-
-
 
     require('@tailwindcss/aspect-ratio')
 
