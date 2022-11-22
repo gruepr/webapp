@@ -25,7 +25,7 @@ export const YouTube = () => {
           <iframe
             width="300"
             height="200"
-            src="https://youtu.be/acS6Kj7gW2A"
+            src="https://www.youtube.com/embed/acS6Kj7gW2A"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -39,7 +39,7 @@ export const YouTube = () => {
           <iframe
             width="300"
             height="200"
-            src="https://www.youtube.com/embed/Ja-PF068tII"
+            src="https://www.youtube.com/embed/1ax-g0Ut1Ak"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -57,7 +57,7 @@ export const YouTube = () => {
             <iframe
               width="300"
               height="200"
-              src="https://youtu.be/sfaKpslFSbE"
+              src="https://www.youtube.com/embed/sfaKpslFSbE"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -71,7 +71,7 @@ export const YouTube = () => {
             <iframe
               width="300"
               height="200"
-              src="https://youtu.be/kUMC3_nFA20"
+              src="https://www.youtube.com/embed/kUMC3_nFA20"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
