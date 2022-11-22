@@ -8,8 +8,8 @@ function WhyGrueprCards(props) {
           alt="icon"
         />
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 dmsans dark">{props.header}</div>
-          <p class="text-gray-700 text-base dmsans dark">{props.info}</p>
+          <h3 class="heading3">{props.header}</h3>
+          <p class="body">{props.info}</p>
         </div>
       </div>
     </div>

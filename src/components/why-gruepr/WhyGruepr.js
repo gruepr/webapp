@@ -5,9 +5,9 @@ import content from "../../content/content";
 const WhyGruepr = () => {
   return (
     <div>
-      <h1 class=" text-center text-3xl text-dark font-bold drop-shadow-lg dmsans pt-10">
+      <h2 class="heading2 text-center">
         {content.home.whyGruepr.header}
-      </h1>
+      </h2>
       <div class=" ">
         {CARD.map((whygruepr, index) => (
           <WhyGrueprCard

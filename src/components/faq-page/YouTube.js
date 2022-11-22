@@ -5,7 +5,7 @@ export const YouTube = () => {
     <div>
       <div className="flex flex-row">
         <div className="px-20 ">
-          <h1 class="py-5 text-1xl text-dark font-bold drop-shadow-lg dmsans ">
+          <h1 class="py-5 body font-bold">
             {content.faq.howGrueprWorks.appOverview}
           </h1>
           <iframe
@@ -19,7 +19,7 @@ export const YouTube = () => {
           ></iframe>
         </div>
         <div className="px-20">
-          <h1 class="py-5 text-1xl text-dark font-bold drop-shadow-lg dmsans ">
+          <h1 class="py-5 body font-bold">
             {content.faq.howGrueprWorks.surveyMakerOverview}
           </h1>
           <iframe
@@ -33,7 +33,7 @@ export const YouTube = () => {
           ></iframe>
         </div>
         <div className="px-20">
-          <h1 class="py-5 text-1xl text-dark font-bold drop-shadow-lg dmsans ">
+          <h1 class="py-5 body font-bold">
             {content.faq.howGrueprWorks.grueprOverview}
           </h1>
           <iframe
@@ -47,11 +47,10 @@ export const YouTube = () => {
           ></iframe>
         </div>
       </div>
-
       <div className="flex flex-row">
         <div>
           <div className="px-20">
-            <h1 class="py-5 text-1xl text-dark font-bold drop-shadow-lg dmsans ">
+            <h1 class="py-5 body font-bold">
               {content.faq.howGrueprWorks.surveyMakerAttributes}
             </h1>
             <iframe
@@ -65,7 +64,7 @@ export const YouTube = () => {
             ></iframe>
           </div>
           <div className="px-20">
-            <h1 class="py-5 text-1xl text-dark font-bold drop-shadow-lg dmsans ">
+            <h1 class="py-5 body font-bold">
               {content.faq.howGrueprWorks.surveyMakerTimezoneSched}
             </h1>
             <iframe

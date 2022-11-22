@@ -4,20 +4,19 @@ import Questions from "./Questions";
 import Youtube from "./YouTube";
 import content from "../../content/content";
 
+
 const Faqs = () => {
   return (
     <div>
       <Header />
       <div class="bg-faq-bg">
-        <h1 class=" px-20 py-20 text-3xl text-dark font-bold drop-shadow-lg dmsans ">
-          {content.faq.howGrueprWorks.header}
-        </h1>
+        <h2 class="px-20 py-20 heading2">{content.faq.howGrueprWorks.header}</h2>
 
         <Youtube />
 
         <Questions />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

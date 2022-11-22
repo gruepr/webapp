@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="float-right flex items-center justify-center h-20 space-x-8">
-        <div className="text-base font-normal dmsans text-neutral-500">
+        <div className="body">
           <a onClick={() => console.log("Home")}>
             <Link to="/Faqs">{content.emailText}</Link>
           </a>
