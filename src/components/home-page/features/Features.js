@@ -5,7 +5,7 @@ import opensource from "../../../img/free-open-source.svg";
 
 const Features = () => {
   return (
-    <body>
+    <div class="bg-features-bg">
       <div class="flex flex-col justify-center items-center ml-16 mr-16">
         <div class="flex flex-row items-center mt-20 mb-20 space-x-8">
           <div class="w-[40rem]">
@@ -45,7 +45,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 export default Features;
