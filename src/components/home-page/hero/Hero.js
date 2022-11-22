@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import content from "../../content/content";
+import content from "../../../content/content";
 
 const Hero = () => {
   return (
