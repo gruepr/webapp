@@ -1,4 +1,4 @@
-import Logos from "../../img/Logos.svg";
+import Logos from "../../../img/Logos.svg";
 
 export const TrustedSchools = () => {
   return (
