@@ -1,6 +1,6 @@
 function WhyGrueprCards(props) {
   return (
-    <div class="bg-accent-50 border-solid border-accent-200 border-2 p-7 space-y-4">
+    <div class="bg-accent-50 border-solid border-accent-200 border-2 p-7 pt-8 pb-8 space-y-4">
       <img
         class="object-none object-center m-auto"
         src={props.img}
