@@ -11,7 +11,6 @@ function WhyGrueprCards(props) {
         <p class="body text-center">{props.info}</p>
       </div>
     </div>
-    // </div>
   );
 }
 export default WhyGrueprCards;
