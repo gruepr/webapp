@@ -1,7 +1,7 @@
-import clipboard from "../../../img/clipboard.svg";
-import glasses from "../../../img/glasses.svg";
-import security from "../../../img/security.svg";
-import content from "../../../content/content";
+import clipboard from "../../../../img/clipboard.svg";
+import glasses from "../../../../img/glasses.svg";
+import security from "../../../../img/security.svg";
+import content from "../../../../content/content";
 
 export const CARD = [
   {
