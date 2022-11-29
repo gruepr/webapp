@@ -4,10 +4,10 @@ import content from "../../../content/content";
 
 const WhyGruepr = () => {
   return (
-    <div>
+    <div class="flex flex-col justify-center items-center m-16 space-y-8">
       <h2 class="heading2 text-center">{content.home.whyGruepr.header}</h2>
-      <div class=" ">
-        {CARD.map((whygruepr, index) => (
+      <div class="grid grid-flow-row gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+        {CARD.map((whygruepr) => (
           <WhyGrueprCard
             img={whygruepr.img}
             header={whygruepr.header}

@@ -36,8 +36,8 @@ export default {
       and the algorithm can use the survey data in a variety of instructor-chosen ways.`,
 
       privacyHeader: "gruepr keeps your data private",
-      privacyText: `Instructors can include whatever questions they would like to use to help form teams, 
-      and the algorithm can use the survey data in a variety of instructor-chosen ways.`,
+      privacyText: `We never collect your data. The survey is typically a Google Form that lives on your 
+      own Google Drive, but could also be performed using any survey instrument you prefer. `,
 
       forEducatorsHeader:
         "gruepr was created by an educator for fellow educators",
