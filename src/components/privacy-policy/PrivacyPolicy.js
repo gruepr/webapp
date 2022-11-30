@@ -6,13 +6,24 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <Header />
-      <div class="mx-16">
+      <div class="mx-16 mt-14">
         <h2 className="heading2 pb-8">{content.privacyPolicy.header}</h2>
-        <p className="body">{content.privacyPolicy.beginning}</p>
-        <p className="body font-bold pt-6">
-          {content.privacyPolicy.linksHeader}
+        <p className="body pb-6">{content.privacyPolicy.beginningP1}</p>
+        <p className="body pb-6">{content.privacyPolicy.beginningP2}</p>
+        <p className="body pb-6">{content.privacyPolicy.beginningP3}</p>
+        <p className="body pb-6">{content.privacyPolicy.beginningP4}</p>
+        <p className="body pb-6">{content.privacyPolicy.beginningP5}</p>
+        <p className="body pb-6">{content.privacyPolicy.beginningP6}</p>
+        <p className="body font-bold">{content.privacyPolicy.securityHeader}</p>
+        <p className="body pb-6"> {content.privacyPolicy.securityText} </p>
+        <p className="body font-bold">
+          {content.privacyPolicy.childrensPrivHeader}
         </p>
-        <p className="body"> {content.privacyPolicy.linksText} </p>
+        <p className="body pb-6">{content.privacyPolicy.childrensPrivText}</p>
+        <p className="body font-bold">{content.privacyPolicy.changesHeader}</p>
+        <p className="body pb-6"> {content.privacyPolicy.changesText} </p>
+        <p className="body font-bold">{content.privacyPolicy.contactHeader}</p>
+        <p className="body pb-6"> {content.privacyPolicy.contactText} </p>
       </div>
       <Footer />
     </div>
