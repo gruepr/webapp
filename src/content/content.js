@@ -119,12 +119,16 @@ export default {
         "If you find bugs or have ideas about how to improve gruepr, please contact Joshua Hertz at info@gruepr.com.",
     },
   },
+
   // ----- Privacy Policy page ----- //
   privacyPolicy: {
+    header: "Privacy Policy",
     beginning: `This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
     even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. No personal data about or 
     from gruepr's users will ever be intentionally shared. For more information, we have a complete privacy policy. <br>
-    gruepr incorporates code from the open source Qt libraries, using version 5.15. These can be freely downloaded from Qt. `,
+    gruepr incorporates code from the open source Qt libraries, using version 5.15. These can be freely downloaded from Qt. 
+    \n
+    `,
     // Security
     securityHeader: "Security",
     securityText: "",
