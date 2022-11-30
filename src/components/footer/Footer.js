@@ -9,8 +9,9 @@ const Footer = () => {
         <div className="text-base font-bold dmsans text-neutral-500 text-decoration-line: underline space-x-4">
           <Link to="/Faqs">{content.footer.howItWorks}</Link>
           <Link to="/Faqs">{content.footer.faq}</Link>
-          <Link to="/Faqs">{content.footer.makeSurvey}</Link>
-          <Link to="/Faqs">{content.footer.privacyPolicy}</Link>
+          {/* Make Survey function does not exist on the website yet */}
+          {/* <Link to="/Faqs">{content.footer.makeSurvey}</Link> */}
+          <Link to="/PrivacyPolicy">{content.footer.privacyPolicy}</Link>
         </div>
       </div>
       <div className="float-right flex items-center justify-center h-20 space-x-8">
