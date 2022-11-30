@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <Header />
-      <div class="mx-16 mt-14">
+      <div class="mx-16 mt-14 bg-privacypolicy-bg">
         <h2 className="heading2 pb-8">{content.privacyPolicy.header}</h2>
         <p className="body pb-6">{content.privacyPolicy.beginningP1}</p>
         <p className="body pb-6">{content.privacyPolicy.beginningP2}</p>
