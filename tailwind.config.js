@@ -71,7 +71,6 @@ module.exports = {
         "faq-bg": "url('../src/img/faq-bg.svg')",
         "contact-bg": "url('../src/img/contact-us.svg')",
         "features-bg": "url('../src/img/features-bg.svg')",
-        "privacypolicy-bg": "url('../src/img/privacypolicy-bg.svg')",
       },
     },
   },
