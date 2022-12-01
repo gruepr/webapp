@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Faq from "react-faq-component";
+import {faq1} from '../../../img/FAQ1.svg'
 
 const data = {
-    title: "FAQ",
+    
+    title: "FAQs",
 
     rows: [ {
         title: 'How do I set the name of each team?',
         content: 'Use the “Set team names:” Drop-down list selection on the bottom right after you load in your data to gruepr and make optimal teams! There is an option in the box to make custom team names.',
-        image: ''
+        image: 'faq1'
     },
 
     {
@@ -17,7 +19,7 @@ const data = {
     },
 
     {
-        title: 'Can I make changes to the teams after they’ve been created?',
+        title: 'Can I make changes to the teams after they\’ve been created?',
         content: 'Yes! Once gruepr creates the teams, click and drag students or teams to the new position you want. A student can be moved onto another team by dragging the student\'s name onto the new team\'s name. Alternatively, two students can be swapped by dragging one student\'s name onto another student\'s name. The teams can be manually rearranged by dragging a team\'s name onto another team\'s name. ',
         image: ''
     },
@@ -38,6 +40,5 @@ const data = {
 
 
     ]
+}; export default data;
 
-
-}
