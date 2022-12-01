@@ -48,7 +48,6 @@ export const YouTube = () => {
         </div>
       </div>
       <div className="flex flex-row">
-        <div>
           <div className="px-20">
             <h1 class="py-5 body font-bold">
               {content.faq.howGrueprWorks.surveyMakerAttributes}
@@ -77,7 +76,6 @@ export const YouTube = () => {
               allowfullscreen
             ></iframe>
           </div>
-        </div>
       </div>
     </div>
   );
