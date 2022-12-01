@@ -7,37 +7,40 @@ const Features = () => {
   return (
     <div class="bg-features-bg">
       <div class="flex flex-col justify-center items-center ml-16 mr-16">
-        <div class="flex flex-row items-center mt-20 mb-20 space-x-8">
-          <div class="w-[40rem]">
+        {/* Create custon surveys */}
+        <div class="mt-20 mb-20 items-center grid grid-flow-row gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div class="object-scale-down">
             <img
               src={survey}
               alt="Gruepr screenshot of survey creation feature"
             />
           </div>
-          <div class="w-[40rem] space-y-3">
+          <div class="resize-x space-y-3">
             <h2 class="heading2">{content.home.features.createSurveyHeader}</h2>
             <p class="body">{content.home.features.createSurveyText}</p>
           </div>
         </div>
-        <div class="flex flex-row items-center mt-20 mb-20 space-x-8">
-          <div class="w-[40rem] space-y-3">
+        {/* Maximize team compatibility */}
+        <div class="mt-20 mb-20 items-center grid grid-flow-row gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div class="object-scale-down lg:order-last">
+            <img src={team} alt="Gruepr screenshot of team creation screen" />
+          </div>
+          <div class="resize-x space-y-3 lg:order-first">
             <h2 class="heading2">
               {content.home.features.teamCompatibilityHeader}
             </h2>
             <p class="body">{content.home.features.teamCompatibilityText}</p>
           </div>
-          <div class="w-[40rem]">
-            <img src={team} alt="Gruepr screenshot of team creation screen" />
-          </div>
         </div>
-        <div class="flex flex-row items-center mt-20 mb-20 space-x-8">
-          <div class="w-[40rem]">
+        {/* Free and open source, always */}
+        <div class="mt-20 mb-20 items-center grid grid-flow-row gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div class="object-scale-down">
             <img
               src={opensource}
               alt="Image representing open source concept"
             />
           </div>
-          <div class="w-[40rem] space-y-3">
+          <div class="resize-x space-y-3">
             <h2 class="heading2">
               {content.home.features.freeOpenSourceHeader}
             </h2>
