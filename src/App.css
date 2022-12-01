@@ -12,7 +12,7 @@
 
 @layer base {
   .heading1 {
-    @apply text-56 leading-72 text-white paytone text-center;
+    @apply text-56 leading-72 text-white paytone;
   }
 
   .heading2 {
