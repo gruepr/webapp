@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import content from "../../../content/content";
 
 const Hero = () => {
@@ -11,7 +10,7 @@ const Hero = () => {
         {content.home.hero.text}
       </h3>
       <button className="secondary-button">
-        <a onClick={() => console.log("FAQs")}>{content.home.hero.button}</a>
+        <a href="">{content.home.hero.button}</a>
       </button>
     </div>
   );
