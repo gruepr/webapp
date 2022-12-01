@@ -119,4 +119,74 @@ export default {
         "If you find bugs or have ideas about how to improve gruepr, please contact Joshua Hertz at info@gruepr.com.",
     },
   },
+
+  // ----- Privacy Policy page ----- //
+  privacyPolicy: {
+    header: "Privacy Policy",
+
+    // Beginning section
+    beginningP1: `This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
+    even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. No personal data about or 
+    from gruepr's users will ever be intentionally shared. For more information, we have a complete privacy policy.
+    \n
+    gruepr incorporates code from the open source Qt libraries, using version 5.15. These can be freely downloaded from Qt. `,
+    beginningP2: `Icons used in gruepr were originally created by Icons8. These icons have been made available under the creative 
+    commons license: Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0). An embedded font is used in gruepr, mostly for pdf 
+    and printer output: Oxygen Mono, Copyright (C) 2012, Vernon Adams (vern@newtypography.co.uk) released under SIL OPEN 
+    FONT LICENSE V1.1.`,
+    beginningP3: `I, Joshua Hertz, built gruepr as an Open Source app. This SERVICE is provided at no cost and is intended for use as 
+    is. This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal 
+    Information if anyone decided to use my Service. If you choose to use my Service, then you agree to the collection 
+    and use of information in relation to this policy. The Personal Information that I collect is used only for providing 
+    and improving the Service. I will not use your information except as described in this Privacy Policy. I will NOT 
+    share your information with anyone. `,
+    beginningP4: `Information Collection and Use: For a better experience, while using our Service, I may ask you to voluntarily 
+    provide me with certain personally identifiable information, including but not limited to Name, Email Address, 
+    and Institution. Information you share with me will NOT be shared, given, or sold to anyone else. `,
+    beginningP5: `Cookies: Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. 
+    These are sent to your browser from the websites that you visit and are stored on your device's internal memory. 
+    This Service does not use “cookies” directly. However, you may choose to use this Service in conjunction with Google, 
+    Canvas, or other external services, and they might use “cookies” to collect information and improve their services. 
+    You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. 
+    If you choose to refuse these cookies, you may not be able to use those external portions of this Service. `,
+    beginningP6: `Service Providers: You may choose to use Google, Canvas, or other service providers in conjunction with this Service. 
+    These service providers are used due to the following reasons: To facilitate our Service; To provide the Service on 
+    our behalf; or To perform Service-related services. I want to inform users of this Service that these third parties 
+    have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, 
+    they are obligated not to disclose or use the information for any other purpose.`,
+
+    // Security
+    securityHeader: "Security",
+    securityText: `I value your trust in providing us your Personal Information, thus we are striving to use commercially 
+    acceptable means of protecting it. The information you share is stored using Google data services. But remember that 
+    no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I 
+    cannot guarantee its absolute security.`,
+
+    // Links to Other Sites
+    linksHeader: "Links to Other Sites",
+    linksText: `This Service may contain links to other sites. If you click on a third-party link, you will be 
+    directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise 
+    you to review the Privacy Policy of these websites. I have no control over and assume no responsibility 
+    for the content, privacy policies, or practices of any third-party sites or services.`,
+
+    // Children's Privacy
+    childrensPrivHeader: "Children's Privacy",
+    childrensPrivText: `These Services do not address anyone under the age of 13. I do not knowingly collect personally 
+    identifiable information from children under 13. In the case I discover that a child under 13 has provided me with 
+    personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware 
+    that your child has provided us with personal information, please contact me so that I will be able to do necessary 
+    actions.`,
+
+    // Changes to This Privacy Policy
+    changesHeader: "Changes to This Privacy Policy",
+    changesText: `I may update our Privacy Policy from time to time. Thus, you are advised to review this page 
+    periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. 
+    These changes are effective immediately after they are posted on this page.`,
+
+    // Contact Me
+    contactHeader: "Contact Me",
+    contactText: `If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at info@gruepr.com. 
+    \n
+    This privacy policy page was created at privacypolicytemplate.net and modified/generated by App Privacy Policy Generator.`,
+  },
 };
