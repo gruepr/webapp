@@ -43,11 +43,11 @@
 @layer components {
   /* add button styling here */
   .primary-button {
-    @apply bg-neutral-500 py-4 px-8 text-16 font-bold dmsans text-white;
+    @apply bg-neutral-500 py-4 px-8 button-text font-bold dmsans text-white;
   }
 
   .secondary-button {
-    @apply bg-white py-4 px-8 text-16 font-bold dmsans text-neutral-500;
+    @apply bg-white py-4 px-8 button-text font-bold dmsans text-neutral-500;
   }
   
 }

@@ -1,21 +1,18 @@
-import React, { useState } from "react";
 import content from "../../../content/content";
 
 const Hero = () => {
   return (
-    <body>
-      <header className="w-full h-96 bg-home-hero-bg bg-cover bg-center flex justify-center items-center">
-        <div class="flex flex-col justify-center items-center">
-          <h1 class="heading1">{content.home.hero.header}</h1>
-          <p class="heading3">{content.home.hero.text}</p>
-          <button className="secondary-button">
-            <a onClick={() => console.log("FAQs")}>
-              {content.home.hero.button}
-            </a>
-          </button>
-        </div>
-      </header>
-    </body>
+    <div className="w-full h-[38.5rem] bg-hero-bg bg-center flex flex-col items-center justify-center gap-y-10">
+      <h1 className="heading1 text-center ml-12 mr-12 lg:w-[50rem] scale-x">
+        {content.home.hero.header}
+      </h1>
+      <h3 className="heading3 ml-12 mr-12 text-center lg:w-[40rem] scale-x">
+        {content.home.hero.text}
+      </h3>
+      <button className="secondary-button">
+        <a href="">{content.home.hero.button}</a>
+      </button>
+    </div>
   );
 };
 export default Hero;
