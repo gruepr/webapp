@@ -16,7 +16,9 @@ const Footer = () => {
       </div>
       <div className="float-right flex items-center justify-center h-20 space-x-8">
         <div className="body">
-          <a href="mailto:info@gruepr.com">{content.emailText}</a>
+          {/* <a href="mailto:info@gruepr.com"> */}
+          {content.emailText}
+          {/* </a> */}
         </div>
       </div>
     </div>

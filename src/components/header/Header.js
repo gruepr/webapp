@@ -14,7 +14,9 @@ const Header = () => {
       </div>
       <div className="float-right flex items-center justify-center h-20 space-x-8">
         <div className="body font-normal">
-          <a href="mailto:info@gruepr.com">{content.emailText}</a>
+          {/* <a href="mailto:info@gruepr.com"> */}
+          {content.emailText}
+          {/* </a> */}
         </div>
         <button className="primary-button">
           <a onClick={() => console.log("FAQs")}>
