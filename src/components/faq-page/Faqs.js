@@ -9,13 +9,11 @@ import content from "../../content/content";
 
 const Faqs = () => {
   return (
-    <div>
+    <div >
       <Header />
       <div class="bg-faq-bg">
         <h2 class="px-20 py-20 heading2">{content.faq.howGrueprWorks.header}</h2>
         <Youtube />
-        
-
         <Questions />
         <Footer />
       </div>
