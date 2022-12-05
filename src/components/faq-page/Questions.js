@@ -8,7 +8,7 @@ const Questions = () => {
 
   return (
 
-    <div class="px-20">
+    <div class="px-20 py-20">
      
       <h1 class="pt-20 pb-7 text-3xl text-dark font-bold drop-shadow-lg dmsans ">
         {content.faq.legal.header}
