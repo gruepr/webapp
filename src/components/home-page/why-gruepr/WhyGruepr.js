@@ -6,9 +6,9 @@ const WhyGruepr = () => {
   return (
     <div
       class="flex flex-col justify-center items-center 
-    laptop:p-16 laptop:space-y-8
-    tablet:p-12
-    mobile:px-[16px] mobile:py-[32px] mobile:space-y-[32px]"
+      laptop:p-16 laptop:space-y-8
+      tablet:p-12
+      mobile:px-[16px] mobile:py-[32px] mobile:space-y-[32px]"
     >
       <h2 class="heading2 text-center">{content.home.whyGruepr.header}</h2>
       <div

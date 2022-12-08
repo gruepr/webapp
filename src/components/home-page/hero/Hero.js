@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div
       className="bg-hero-bg bg-cover bg-center flex flex-col items-center justify-center 
-      laptop:gap-y-10 laptop:py-[120px]
+      laptop:space-y-[40px] laptop:py-[120px]
       mobile:py-[32px] mobile:space-y-[32px]"
     >
       <h1
