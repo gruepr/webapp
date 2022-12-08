@@ -11,6 +11,10 @@
 }
 
 @layer base {
+  .mobile-heading {
+    @apply text-[40px] leading-[48px] text-white paytone;
+  }
+
   .heading1 {
     @apply text-56 leading-72 text-white paytone;
   }
