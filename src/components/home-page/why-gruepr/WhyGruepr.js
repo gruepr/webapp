@@ -4,9 +4,17 @@ import content from "../../../content/content";
 
 const WhyGruepr = () => {
   return (
-    <div class="flex flex-col justify-center items-center m-16 space-y-8">
+    <div
+      class="flex flex-col justify-center items-center 
+    laptop:p-16 laptop:space-y-8
+    mobile:px-[16px] mobile:py-[32px] mobile:space-y-[32px]"
+    >
       <h2 class="heading2 text-center">{content.home.whyGruepr.header}</h2>
-      <div class="grid grid-flow-row gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+      <div
+        class="grid grid-flow-row mobile:grid-cols-1 tablet:grid-cols-1 laptop:grid-cols-3
+      laptop:gap-8
+      mobile:gap-[32px]"
+      >
         {CARD.map((whygruepr) => (
           <WhyGrueprCard
             img={whygruepr.img}
