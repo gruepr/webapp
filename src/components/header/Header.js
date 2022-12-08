@@ -5,9 +5,11 @@ const Header = () => {
   return (
     <div className="flow-root items-center bg-white px-16 py-1">
       <div className="float-left flex items-center h-20 space-x-10">
-        <div className="text-2xl pb-2 paytone text-primary-500">gruepr</div>
+        <div className="text-2xl pb-2 paytone text-primary-500">
+        <Link to="/"> {content.navbar.home} </Link>
+        </div>
         <div className="link no-underline space-x-4">
-          <Link to="/"> {content.navbar.home} </Link>
+          {/* <Link to="/"> {content.navbar.home} </Link> */}
           <Link to="/Faqs"> {content.navbar.faq} </Link>
           <Link to="/AboutUs"> {content.navbar.about} </Link>
         </div>

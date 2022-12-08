@@ -5,7 +5,7 @@ export default {
 
   // ----- Navigation bar ----- //
   navbar: {
-    home: "Home",
+    // home: "Gruepr",
     faq: "FAQs",
     about: "About Us",
     downloadButton: "Download",
