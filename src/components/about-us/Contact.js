@@ -3,10 +3,11 @@ import DecorativeImage from "../../img/contact-bottom.svg";
 
 const Contact = () => {
   return (
-    <div className="laptop:bg-cover laptop:bg-contact-bg laptop:bg-[right_top_1rem] mobile:bg-cover mobile:bg-[right_top]">
+    <div className="laptop:bg-cover laptop:bg-contact-bg laptop:bg-[right_top_1rem] mobile:bg-contact-bg mobile:bg-cover mobile:bg-[right_top]">
       <div
         className="laptop:space-y-4 laptop:p-16 laptop:pb-8
-      mobile:space-y-3 mobile:p-3 mobile:pt-10"
+        tablet:p-8
+        mobile:space-y-3 mobile:p-3 mobile:pt-10"
       >
         <h2 class="heading2">{content.aboutUs.contact.header}</h2>
         <div className="laptop:space-y-4 mobile:space-y-5">
