@@ -8,8 +8,8 @@ const Hero = () => {
       mobile:py-[32px] mobile:space-y-[32px]"
     >
       <h1
-        className="text-center scale-x laptop:heading1 
-        laptop:px-12 laptop:w-[50rem]
+        className="text-center scale-x laptop:w-[50rem] laptop:heading1 
+        tablet:px-12 
         tablet:w-[40rem]
         mobile:mobile-heading mobile:px-[16px]"
       >
