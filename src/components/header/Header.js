@@ -24,17 +24,25 @@ const Header = () => {
         {/* Visible links in larger navbar */}
         <div className="link no-underline laptop:space-x-4 tablet:flex mobile:hidden">
           <NavLink
-            activeStyle=""
             to="/Faqs"
             className={({ isActive }) =>
               isActive
-                ? "border border-primary-500 border-t-0 border-l-0 border-r-0 border-b-4"
-                : ""
+                ? "mt-[12px] mb-[8px] py-[8px] border-primary-500 border-0 border-b-4"
+                : "mt-[12px] mb-[8px] py-[8px]"
             }
           >
             {content.navbar.faq}
           </NavLink>
-          <NavLink to="/AboutUs"> {content.navbar.about} </NavLink>
+          <NavLink
+            to="/AboutUs"
+            className={({ isActive }) =>
+              isActive
+                ? "mt-[12px] mb-[8px] py-[8px] border-primary-500 border-0 border-b-4"
+                : "mt-[12px] mb-[8px] py-[8px]"
+            }
+          >
+            {content.navbar.about}
+          </NavLink>
         </div>
       </div>
 
