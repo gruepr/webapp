@@ -19,7 +19,7 @@ const Header = () => {
         </NavLink>
 
         {/* Visible links in larger navbar */}
-        <div className="link no-underline laptop:space-x-4 tablet:flex mobile:hidden">
+        <div className="link no-underline tablet:space-x-4 tablet:flex mobile:hidden">
           <NavLink
             to="/Faqs"
             className={({ isActive }) =>
@@ -43,7 +43,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="h-20 float-right flex items-center laptop:space-x-8">
+      <div className="h-20 float-right flex items-center tablet:space-x-8">
         <div className="body font-normal hidden tablet:flex">
           {content.emailText}
         </div>
