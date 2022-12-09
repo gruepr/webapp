@@ -6,19 +6,17 @@ const Header = () => {
     <div className="flow-root items-center bg-white px-16 py-1">
       <div className="float-left flex items-center h-20 space-x-10">
         <div className="text-2xl pb-2 paytone text-primary-500">gruepr</div>
-        <div className="link no-underline space-x-4">
+        <div className="link no-underline space-x-4 laptop:visible mobile:invisible">
           <Link to="/"> {content.navbar.home} </Link>
           <Link to="/Faqs"> {content.navbar.faq} </Link>
           <Link to="/AboutUs"> {content.navbar.about} </Link>
         </div>
       </div>
       <div className="float-right flex items-center justify-center h-20 space-x-8">
-        <div className="body font-normal">
-          {/* <a href="mailto:info@gruepr.com"> */}
+        <div className="body font-normal laptop:visible mobile:invisible">
           {content.emailText}
-          {/* </a> */}
         </div>
-        <button className="primary-button">
+        <button className="laptop:primary-button mobile:p-[16px]">
           <a onClick={() => console.log("FAQs")}>
             {content.navbar.downloadButton}
           </a>
