@@ -1,18 +1,15 @@
 import { NavLink } from "react-router-dom";
 import content from "../../content/content";
-import hamburger from "../../img/hamburger.svg";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Header = () => {
   return (
     <div className="bg-white flow-root laptop:px-16 mobile:px-[16px] border border-neutral-200 border-t-0 border-l-0 border-r-0 border-b-1">
       <div className="h-20 float-left flex items-center laptop:space-x-0 mobile:space-x-[24px]">
         {/* Hamburger menu in mobile view */}
-        <button className="mobile:flex laptop:hidden">
-          <img src={hamburger} alt="hamburger menu" />
-          {/* <Link to="/"> {content.navbar.home} </Link>
-          <Link to="/Faqs"> {content.navbar.faq} </Link>
-          <Link to="/AboutUs"> {content.navbar.about} </Link> */}
-        </button>
+        <div className="z-50 tablet:hidden mobile:block">
+          <HamburgerMenu />
+        </div>
 
         <NavLink
           to="/"
