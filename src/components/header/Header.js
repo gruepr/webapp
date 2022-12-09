@@ -7,7 +7,7 @@ const Header = () => {
     <div className="bg-white flow-root laptop:px-16 mobile:px-[16px] border border-neutral-200 border-t-0 border-l-0 border-r-0 border-b-1">
       <div className="h-20 float-left flex items-center laptop:space-x-0 mobile:space-x-[24px]">
         {/* Hamburger menu in mobile view */}
-        <div className="z-50 tablet:hidden mobile:block">
+        <div className="z-50 laptop:hidden mobile:block">
           <HamburgerMenu />
         </div>
 
@@ -19,7 +19,7 @@ const Header = () => {
         </NavLink>
 
         {/* Visible links in larger navbar */}
-        <div className="link no-underline tablet:space-x-4 tablet:flex mobile:hidden">
+        <div className="link no-underline laptop:space-x-4 laptop:flex mobile:hidden">
           <NavLink
             to="/Faqs"
             className={({ isActive }) =>
