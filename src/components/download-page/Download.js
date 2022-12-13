@@ -1,4 +1,4 @@
-import content from "../../../content/content";
+import content from "../../content/content";
 
 const Download = () => {
   return (
