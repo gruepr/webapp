@@ -129,10 +129,13 @@ export default {
     changelog: "Changelog.",
 
     downloadGruepr: "Download gruepr",
+
+    windows: "Windows:",
     windowsInstall: `To install, download the file linked above and double-click to begin the installation. You may need to 
     enable Administrator privileges and click past security warnings during both the installation and when gruepr 
     is run for the first time. `,
 
+    mac: "MacOS:",
     macInstall: `To install, download the dmg file, open the downloaded file, then drag the program to the Applications 
     folder to complete installation. You may need to temporarily override your Mac security settings during the first time 
     you run the program. To do this, Control-click the app, choose Open from the menu, and in the dialog that appears, 
