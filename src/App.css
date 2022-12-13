@@ -11,22 +11,21 @@
 }
 
 @layer base {
+  .mobile-heading {
+    @apply text-[40px] leading-[48px] text-white paytone;
+  }
   .heading1 {
     @apply text-56 leading-72 text-white paytone;
   }
-
   .heading2 {
     @apply text-42 leading-56 text-neutral-500 font-bold dmsans;
   }
-
   .heading3 {
     @apply text-24 leading-32 text-neutral-500 font-medium dmsans;
   }
-
   .body {
     @apply text-16 leading-24 text-neutral-500 dmsans;
   }
-
   .button-text {
     @apply text-16 leading-24 text-neutral-500 font-bold dmsans;
   }
@@ -41,13 +40,10 @@
 }
 
 @layer components {
-  /* add button styling here */
   .primary-button {
     @apply bg-neutral-500 py-4 px-8 button-text font-bold dmsans text-white;
   }
-
   .secondary-button {
     @apply bg-white py-4 px-8 button-text font-bold dmsans text-neutral-500;
   }
-  
 }

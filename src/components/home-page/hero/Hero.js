@@ -2,11 +2,25 @@ import content from "../../../content/content";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[38.5rem] bg-hero-bg bg-center flex flex-col items-center justify-center gap-y-10">
-      <h1 className="heading1 text-center ml-12 mr-12 lg:w-[50rem] scale-x">
+    <div
+      className="bg-hero-bg bg-cover bg-center flex flex-col items-center justify-center 
+      laptop:space-y-[40px] laptop:py-[120px]
+      mobile:py-[32px] mobile:space-y-[32px]"
+    >
+      <h1
+        className="text-center scale-x laptop:w-[50rem] laptop:heading1 
+        tablet:px-12 
+        tablet:w-[40rem]
+        mobile:mobile-heading mobile:px-[16px]"
+      >
         {content.home.hero.header}
       </h1>
-      <h3 className="heading3 ml-12 mr-12 text-center lg:w-[40rem] scale-x">
+      <h3
+        className="text-center scale-x heading3 
+        laptop:px-12 laptop:w-[40rem]
+        tablet:w-[40rem]
+        mobile:px-[16px]"
+      >
         {content.home.hero.text}
       </h3>
       <button className="secondary-button">

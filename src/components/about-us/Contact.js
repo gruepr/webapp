@@ -1,17 +1,31 @@
+import content from "../../content/content";
+import DecorativeImage from "../../img/contact-bottom.svg";
+
 const Contact = () => {
-
-
-    return (
-        <div className="bg-contact-bg ">
-            <div className="px-20">
-            <h1 class="py-10 text-3xl text-dark font-bold drop-shadow-lg dmsans ">Contact</h1>
-            <p class=" pb-10 text-gray-700 text-base dmsans dark">Locate the issue tracker to submit a new issue here:  </p>
-            <a className="bg-white py-4 px-10 font-bold dmsans text-black outline" href="https://github.com/gruepr/gruepr/issues">Issue Tracker</a>
-            
-            <p class=" py-10 text-gray-700 text-base dmsans dark">If you find bugs or have ideas about how to improve gruepr, please contact Joshua Hertz at info@gruepr.com.  </p>
-            </div>
+  return (
+    <div className="laptop:bg-cover laptop:bg-contact-bg laptop:bg-[right_top_1rem] mobile:bg-contact-bg mobile:bg-cover mobile:bg-[right_top]">
+      <div
+        className="laptop:space-y-4 laptop:p-16 laptop:pb-8
+        tablet:p-8
+        mobile:space-y-3 mobile:p-3 mobile:pt-10"
+      >
+        <h2 class="heading2">{content.aboutUs.contact.header}</h2>
+        <div className="laptop:space-y-4 mobile:space-y-5">
+          <p class="body">{content.aboutUs.contact.submitIssue}</p>
+          <button className="secondary-button outline outline-neutral-500">
+            <a target="_blank" href="https://github.com/gruepr/gruepr/issues">
+              {content.aboutUs.contact.issueTracker}
+            </a>
+          </button>
+          <p class="body">{content.aboutUs.contact.bugsOrImprove}</p>
         </div>
-
-    )
-}
+      </div>
+      <img
+        class="object-cover w-full"
+        src={DecorativeImage}
+        alt="decorative image"
+      />
+    </div>
+  );
+};
 export default Contact;
