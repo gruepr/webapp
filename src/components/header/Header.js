@@ -19,9 +19,7 @@ const Header = () => {
           {/* </a> */}
         </div>
         <button className="primary-button">
-          <a onClick={() => console.log("FAQs")}>
-            {content.navbar.downloadButton}
-          </a>
+          <Link to="/Download">{content.navbar.downloadButton}</Link>
         </button>
       </div>
     </div>
