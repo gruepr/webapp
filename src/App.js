@@ -3,6 +3,7 @@ import Home from "./components/home-page/Home";
 import Faqs from "./components/faq-page/Faqs";
 import AboutUs from "./components/about-us/AboutUs";
 import PrivacyPolicy from "./components/privacy-policy/PrivacyPolicy";
+import Download from "./components/download-page/Download";
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Faqs" element={<Faqs />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/Download" element={<Download />} />
       </Routes>
     </div>
   );
