@@ -426,5 +426,218 @@ export default {
       
       `,
     },
+
+    9.131: {
+      header: "9.13.1",
+      text: `Reverted genetic algorithm mutation behavior, as it works much better for large genomes
+      Code cleanup
+      Moved macOS binaries to use Qt version 5.15; now compatible with macOS 11 (Big Sur)
+      `,
+    },
+
+    9.13: {
+      header: "9.13",
+      text: `Made progress dialog modal
+      Adjusted genetic algorithm such that check for mutation to occur happens with low probability per gene site, instead of high probability per genome with iteration
+      `,
+    },
+
+    9.121: {
+      header: "9.12.1",
+      text: `Lots of code modernization and some bugfixes
+
+      `,
+    },
+
+    9.12: {
+      header: "9.12",
+      text: `Bugfix and improvements in handling when students have ambiguous schedules (all times checked or all unchecked)
+
+      `,
+    },
+
+    9.11: {
+      header: "9.11",
+      text: `Vastly more quick and efficient handling of data in the team info display
+      Other UI improvements throughout
+      `,
+    },
+
+    9.1: {
+      header: "9.10",
+      text: `Internal code modernization and optimization
+      `,
+    },
+
+    9.9: {
+      header: "9.9",
+      text: `Much improved drag-and-drop functionality to modify teams after creation
+      Updated UI on custom teamsizes, custom teamnames, and URMselection dialog boxes      
+      `,
+    },
+
+    9.83: {
+      header: "9.8.3",
+      text: `Fixed Print Teams dialog crash
+      Still more code modernization and optimization    `,
+    },
+
+    9.82: {
+      header: "9.8.2",
+      text: `Fixed crash when all students on a team have a value of "unknown" for an attribute
+      Fixed crash when changing the desired team size after forming teams and then re-displaying the team info
+      Further code modernization and optimization `,
+    },
+
+    9.81: {
+      header: "9.8.1",
+      text: `Fixed a few small bugs related to attribute values
+      Allowed that the current teaming options are saved as new default values every time the program exit, without the popup window `,
+    },
+
+    9.8: {
+      header: "9.8",
+      text: `Significantly improved speed of optimization through better coding :)
+      Made more flexible the recognition of schedule questions in the survey header
+      Fixed bug in recognizing attribute response values that are categorical yet begin with a decimal value (e.g., GPA)
+      Further modernizing of code
+      `,
+    },
+
+    9.71: {
+      header: "9.7.1",
+      text: `Further cleaned up UI
+      Fixed bug that prevented macOS version from running in certain cases    `,
+    },
+
+    9.7: {
+      header: "9.7",
+      text: `The schedule question can now be phrased so that it asks students when they are free OR when they are busy (SurveyMaker can create the question either way and the data is correctly interpreted in gruepr).
+      Cleaned up UI somewhat, and menu bar added.
+      Cleaned up and simplified the optimization and genetic algorithm code   `,
+    },
+
+    9.61: {
+      header: "9.6.1",
+      text: `
+      Incompatible Attributes are now active even if that attribute has a weight of 0.
+      Minor UI improvements to the Incompatible Attributes dialog.
+      `,
+    },
+
+    9.6: {
+      header: "9.6",
+      text: `
+      added external window display of optimization progress and cleaned up UI
+      made the section question of the survey to be more specific
+      increased the max # of attribute questions to 15
+      initial order of students on each team is now alphabetical by name, and initial order of teams is by name of first student in team; click on name column gets back to this order
+      add option to save surveymaker output to textfile/csv file instead of Google Form
+      moved the "clear all teammates" command in the prevented/required/requested teammates window to less error-prone location
+      added command to save/load CSV of prevented/required/requested teammates, using levenshtein::distance to match names
+      fixed bug with multiple notes columns in survey data
+      now saves/loads teaming options into a file instead of registry
+      now auto-stops optimization on timer after outcome is stable
+      modernize rand() and other code clean up / modernization
+      `,
+    },
+
+    9.5: {
+      header: "9.5",
+      text: `
+      Incompatible Attributes are now active even if that attribute has a weight of 0.
+      Minor UI improvements to the Incompatible Attributes dialog.
+      `,
+    },
+
+    9.4: {
+      header: "9.4",
+      text: `
+      Treatment of race/ethnicity is now more inclusive. The survey question (if included) now asks students to self-identify their racial/ethnic/cultural heritage, and then allows the instructor to select later which of the responses should be considered an underrepresented minority group.
+      `,
+    },
+
+    9.32: {
+      header: "9.3.2",
+      text: `Bugfix: crash when optimizing a dataset with all survey responses giving the same value for one or more attributes (e.g., all surveys answer "2" for the first attribute question)
+      Generalized the Incompatible Responses feature so that each attribute has a list of incompatible pairs
+      Continuing code modernization/cleanup
+      
+      `,
+    },
+
+    9.31: {
+      header: "9.3.1",
+      text: `Minor bugfixes: greupr failing when reading in a blank value in the csv datafile, surveymaker loading incorrect attribute response options from a saved survey file    `,
+    },
+
+    9.3: {
+      header: "9.3",
+      text: `Added option for Incompatible Responses to each attribute
+      `,
+    },
+
+    9.2: {
+      header: "9.2",
+      text: `When adding Prevented Teammates, can now load a spreadsheet file from previous teaming in order to give all students new teammates
+      Can now save (or overwrite) a survey file from within gruepr after adding, editing, or removing a student from the dataset
+      Fixed bug in removing a single required/prevented/requested teammate
+      New splashscreen during app startup
+      `,
+    },
+
+    9.1: {
+      header: "9.1",
+      text: `Reorganized the "save/print teams" dialog box
+      Added teaming info to the instructor's file
+      `,
+    },
+
+    9.0: {
+      header: "9.0 - MAJOR UPDATE",
+      text: `Merged gruepr and SurveyMaker into a single app. On program startup, a window asks which to run.
+
+      `,
+    },
+
+    8.17: {
+      header: "8.17",
+      text: `Much better handling of purely categorical (i.e., non-numerical or ordered) attributes, such as academic major.
+      SurveyMaker now uses local day names, instead of defaulting to English names
+      `,
+    },
+
+    8.161: {
+      header: "8.16.1",
+      text: `Critical bugfixes and improvements to the required/prevented/requested teammates feature.
+      Improved flexibility to alternative date and time formats and character sets.
+      Parallel processing during optimization brought to macOS; optimization now much faster on multi-core CPUs.
+      `,
+    },
+
+    8.16: {
+      header: "8.16",
+      text: `
+      Tables displaying student and team info are smarter in how they display information--columns can be sorted by clicking on the top of the column.
+      A number of internal changes to the code to improve efficiency.
+      `,
+    },
+
+    8.15: {
+      header: "8.15",
+      text: `
+      
+SurveyMaker can now save surveys to the harddrive for later editing or reuse.
+Attribute questions can now have >9 response options, and the options do not need to be numbered.
+Optimization is now significantly faster on a Windows machine with a modern (multi-core) CPU through use of parallel processing; maximum number of students has been accordingly increased to 300.
+
+      `,
+    },
+
+    8.14: {
+      header: "8.14",
+      text: `
+      There's now a simpler way in gruepr to add a student, plus a way to edit an existing student's information.`,
+    },
   },
 };
