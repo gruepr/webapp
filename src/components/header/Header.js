@@ -47,7 +47,7 @@ const Header = () => {
         <div className="body font-normal hidden tablet:flex">
           {content.emailText}
         </div>
-        <button className="primary-button">
+        <button className="primary-button mobile:px-[16px]">
           <NavLink to="/Download">{content.navbar.downloadButton}</NavLink>
         </button>
       </div>
