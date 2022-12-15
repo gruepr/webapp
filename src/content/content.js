@@ -251,14 +251,180 @@ export default {
       behind-the-scenes code reorganization for future integration with Canvas and more direct Google integration`,
     },
 
-
-    10.7: {
+    10.71: {
       header: "10.7.1",
       text: `increased max number of students to 500; works fast enough with 500 students, though it does get pretty slow when class size is very large and Required Teammates or Non-Teammates are used
       adjusted scoring when team has more-than-desired schedule overlap to prevent runaway scores with high overlap
       when a student has misspelled another student's name that they've given in their survey response as a preferred teammate or non-teammate, the select-matching-name-dialogue now includes the requesting student's name
       improved the graph of optimization progress--now colors plot blue/pink when there is/is not at least one genome that meets all the rules
       improved UI in start window, with message confirming user has the latest version and is registered`,
+    },
+
+    10.7: {
+      header: "10.7",
+      text: `now only asks for the class's base timezone if the students were asked for their home timezone AND for their schedule
+      significantly expanded the algorithm that recognizes timezone data in the survey
+      Bugfix - now correctly displays at full width the UI elements in the teamset tabs
+      updated C++ code standard to C++17, removing several deprecated QT elements in the process`,
+    },
+
+    10.61: {
+      header: "10.6.1",
+      text: `Bugfix - fixed crash on mac when changing the matched name in the select-matching-name dialog
+      Bugfix - now correctly handles sub-version numbers when checking for new versions on startup`,
+    },
+
+    10.6: {
+      header: "10.6",
+      text: `upon opening gruepr, an online check of the latest downloadable version is made, offering to load gruepr homepage if a newer version is available
+      the count of how many students gave each response now updates in the attributeTabs when changing the section being placed on teams
+      an indicator of the maximum value of schedule and attribute weights has been added
+      Bugfix - attribute tabs in gruepr now show at proper width
+      `,
+    },
+
+    10.5: {
+      header: "10.5",
+      text: `much better UI with the attribute tabs in both gruepr and surveymaker
+      in gruepr, the attribute tabs now show a count of how many students gave each of the responses
+      in gruepr, when the attribute is home timezone, the offset from GMT is shown instead of a letter as the response value
+      in surveymaker, tabs can now be moved or closed in order to quickly rearrange or remove attribute questions in the survey
+      Bugfix - adding a new student now correctly sets their schedule as ambiguous
+      Bugfix - action menu in required / prevented / requested teammates dialog correctly begins the correct action
+      Bugfix - saving and loading a survey in surveymaker now remembers attributes that allow multiple response options
+      `,
+    },
+
+    10.4: {
+      header: "10.4",
+      text: `Major feature - now each time you create teams, a brand new Teams Tab opens to show the team set created
+      multiple team sets can be viewed simultaneously on different tabs. This can be used to compare easily the teams you get using different teaming options, or perhaps you'd like to create the teams for a few different sections and keep them all open before saving / printing them.
+      now can load Prevented Teammates directly from an open Teams Tab. This can be used so that multiple team sets can be created with the same students and same teaming options, but where everyone gets all new teammates in each team set.
+      Bugfix - team scores were miscalculated in certain rare cases
+      the "actions" in the required / prevented / requested teammates dialog now only get applied to the students listed in the table (i.e., the students in the section being considered) as suggested by the wording
+      as always, internal code cleanup and modernization--optimization might be slightly faster
+      `,
+    },
+
+    10.3: {
+      header: "10.3",
+      text: `Bugfix - prevent crash when loading a survey without timestamp, first name, last name, and/or email address
+      Bugfix - prevent crash when using the edit/add student dialog with certain attribute data
+      Bugfix - improved handling of accented characters in student names and other survey data
+      added new select-multiple-options type of attribute:
+      added as option in SurveyMaker, adjusting the output accordingly in the Google Form or textfile survey
+      added display in gruepr when loading survey data with an attribute question that allowed multiple responses
+      updated handling of attribute data throughout gruepr to accommodate multiple response values
+      much better UI in attribute questions within the edit/add student dialog
+      improved handling of the minimum and desired numbers of meeting times:
+      values can now be equal
+      meeting block size of 3 hours now possible
+      the maximum values now adjust for the number of possible meeting times, given the survey data and meeting block size
+      `,
+    },
+
+    10.2: {
+      header: "10.2",
+      text: `Bugfix - editing a student's record no longer erases the notes field
+      Bugfix - removing a student record no longer messes up all of the previously entered required / prevented / requested teammates
+      Bugfix - now correctly implements required / incompatible attributes with value of "unknown / not set"
+      when comparing student list to roster file, now uses both name and email address to find a match; eliminated the choice of whether to use roster or survey email address when they match
+      csv files can now be header-row-free
+      teaming options files now include the required attribute responses
+      added randomize team names function
+      better UI in required / incompatible attributes dialog
+      removed "OK" button from small "setting up printer/pdfwriter" dialog
+      sets/resets background color of teams in table after swapping or moving students
+      organized code into dialogs and widgets subfolders
+      changed the internal ID assigned to each studentRecord to be a permanent value set according to a dataOption counter that increments each time a student is added
+      `,
+    },
+
+    10.1: {
+      header: "10.1",
+      text: `Added a "Required Attribute" feature, which ensures each team has at least one student with a particular attribute value
+      Teams with less than a 0 compatibility score now indicated with highlight color and Tooltip
+      Continuing behind-the-scenes code reorganization
+      `,
+    },
+
+    10.06: {
+      header: "10.0.6",
+      text: `Improved functionality and much better UI in the Compare To Roster feature
+      Continuing behind-the-scenes code reorganization
+      
+      `,
+    },
+
+    10.05: {
+      header: "10.0.5",
+      text: `Bugfix - students with ambiguous schedules were not being correctly accounted in the schedule score
+
+      
+      `,
+    },
+
+    10.04: {
+      header: "10.0.4",
+      text: `Bugfix - student schedules were shifting even when a time zone was specified for the schedule
+      better display of time zones in student & team info tables
+      minor code reorganization
+      `,
+    },
+
+    10.03: {
+      header: "10.0.3",
+      text: `Bugfix - prevent crash when loading a survey file that doesn't have at least one schedule or attribute question
+      `,
+    },
+
+    10.02: {
+      header: "10.0.2",
+      text: `Bugfix - crash on loading saved teaming options
+      `,
+    },
+
+    10.01: {
+      header: "10.0.1",
+      text: `Added to the help menu an option to submit a bug report (using BitBucket Issues tracker)
+      `,
+    },
+
+    10.0: {
+      header: "10.0",
+      text: `New Features
+
+      can now ask students in the survey for names of preferred teammates and / or non-teammates, and can import those in gruepr as required/requested/prevented
+      new "load roster" option to compare against survey data, updating email addresses and offering to add missing students and remove extra students
+      added timezone functionality to survey: this includes allowing students to fill out survey schedule in their own timezone and then correct/shift into the "class timezone" each after collecting the results
+      can now now prevent isolating nonbinary students, with distinction between students who are nonbinary vs. those whose gender is not known
+      Better Data Handling
+      
+      expansion of what gets recognized for gender response: woman OR female -> woman; man OR male -> man; anything that includes "trans", "queer", or any combination of "non" and "binary" -> nonbinary
+      doesn't mark students as duplicate just because they both have blank email adresses
+      use a survey import dialog box so the user can select the meaning of each question
+      allow for section question later in the "additional questions"
+      change incompatible response dialog / behavior to add incompatible same responses (e.g., 1 with 1)
+      add a penalty point for each incompatible attribute pair found on a team
+      improved scoring of teams with one student
+      Bug Fixes
+      
+      newlines within a csv field are now handled properly
+      re-saving a survey file after adding or editing a student mishandled the attribute values
+      the dialog box to choose which race/ethnicity to consider as URM crashed in certain cases
+      starting the optimization crashed upon first updating the progress values whenever optimization was too quick
+      Better User Interface
+      
+      add/edit student info dialog much improved; attribute response texts now always show in attribute value selection box
+      changed display of team info to be always on, but bold and with colored background
+      put attribute questions in a tab-style display for both surveymaker and gruepr
+      Behind the Scenes Improvements
+      
+      made interface work much better with dark mode / dark color schemes
+      LOTS of code modernization and organization
+      moved code to Qt v5.15 standards
+      
+      `,
     },
   },
 };
