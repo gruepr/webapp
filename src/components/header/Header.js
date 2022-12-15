@@ -47,10 +47,8 @@ const Header = () => {
         <div className="body font-normal hidden tablet:flex">
           {content.emailText}
         </div>
-        <button className="laptop:primary-button mobile:primary-button mobile:p-[16px]">
-          <a onClick={() => console.log("FAQs")}>
-            {content.navbar.downloadButton}
-          </a>
+        <button className="primary-button">
+          <Link to="/Download">{content.navbar.downloadButton}</Link>
         </button>
       </div>
     </div>

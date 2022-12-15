@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import content from "../../../content/content";
 
 const Hero = () => {
@@ -24,7 +25,7 @@ const Hero = () => {
         {content.home.hero.text}
       </h3>
       <button className="secondary-button">
-        <a href="">{content.home.hero.button}</a>
+        <Link to="/Download">{content.navbar.downloadButton}</Link>
       </button>
     </div>
   );

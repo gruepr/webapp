@@ -120,6 +120,31 @@ export default {
     },
   },
 
+  // ----- Download page ----- //
+  downloadPage: {
+    header: "Download and Installation",
+
+    // Beginning section
+    version: "The most recent version is 11.1, dated 18 November 2022. ",
+    changelog: "Changelog.",
+
+    downloadGruepr: "Download gruepr",
+
+    windows: "Windows:",
+    windowsInstall: `To install, download the file linked above and double-click to begin the installation. You may need to 
+    enable Administrator privileges and click past security warnings during both the installation and when gruepr 
+    is run for the first time. `,
+
+    mac: "MacOS:",
+    macInstall: `To install, download the dmg file, open the downloaded file, then drag the program to the Applications 
+    folder to complete installation. You may need to temporarily override your Mac security settings during the first time 
+    you run the program. To do this, Control-click the app, choose Open from the menu, and in the dialog that appears, 
+    click Open.`,
+
+    trySample: `If you would like a sample set of data to evaluate gruepr, you can download that here:`,
+    downloadData: `Download data`,
+  },
+
   // ----- Privacy Policy page ----- //
   privacyPolicy: {
     header: "Privacy Policy",
