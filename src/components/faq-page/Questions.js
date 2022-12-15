@@ -21,7 +21,7 @@ const Questions = () => {
         <p class="body"> {content.faq.legal.text} </p>
       </div> */}
 
-      <div className="px-[64px] py-[32px] mb-[56px]">
+      <div className="tablet:py-[32px] mobile:py-[24px] mb-[16px]">
         <h2 class="heading2">FAQs</h2>
         <div className="body">
           <Faq styles={styles} data={data} />

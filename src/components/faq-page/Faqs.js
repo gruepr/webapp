@@ -9,15 +9,15 @@ const Faqs = () => {
   return (
     <div>
       <Header />
-      <div>
-        <h2 className="tablet:p-[64px] mobile:p-[16px] heading2">
-          {content.faq.howGrueprWorks.header}
-        </h2>
-        <Youtube />
+      <div className="tablet:p-[64px] mobile:p-[16px]">
+        <div className="tablet:mb-[64px] mobile:mb-[48px]">
+          <h2 className="heading2">{content.faq.howGrueprWorks.header}</h2>
+          <Youtube />
+        </div>
         <Questions />
-        <img className="object-fill" src={FaqBG} />
-        <Footer />
       </div>
+      <img className="object-fill w-[100%]" src={FaqBG} />
+      <Footer />
     </div>
   );
 };

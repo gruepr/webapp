@@ -4,14 +4,15 @@ export const YouTube = () => {
   return (
     <div>
       <div
-        className="flex items-center 
-        tablet:flex-row  tablet:space-x-[64px]
-        mobile:flex-col mobile:space-y-[20px] mobile:mb-[20px]"
+        className="grid mobile:grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3
+        mobile:place-items-center mobile:gap-y-[20px]
+        tablet:place-items-start tablet:gap-x-[24px]
+        desktop:px-[112px]"
       >
         <div>
-          <h1 class="py-[20px] body font-bold">
+          <p class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.appOverview}
-          </h1>
+          </p>
           <iframe
             width="300"
             height="200"
@@ -22,6 +23,7 @@ export const YouTube = () => {
             allowfullscreen
           ></iframe>
         </div>
+
         <div>
           <h1 class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.surveyMakerOverview}
@@ -36,6 +38,7 @@ export const YouTube = () => {
             allowfullscreen
           ></iframe>
         </div>
+
         <div>
           <h1 class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.grueprOverview}
@@ -50,12 +53,7 @@ export const YouTube = () => {
             allowfullscreen
           ></iframe>
         </div>
-      </div>
-      <div
-        className="flex items-center 
-        tablet:flex-row  tablet:space-x-[64px]
-        mobile:flex-col mobile:space-y-[20px]"
-      >
+
         <div>
           <h1 class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.surveyMakerAttributes}
@@ -70,6 +68,7 @@ export const YouTube = () => {
             allowfullscreen
           ></iframe>
         </div>
+
         <div>
           <h1 class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.surveyMakerTimezoneSched}
