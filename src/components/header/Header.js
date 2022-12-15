@@ -24,8 +24,8 @@ const Header = () => {
             to="/Faqs"
             className={({ isActive }) =>
               isActive
-                ? "mt-[12px] mb-[8px] py-[8px] border-primary-500 border-0 border-b-4"
-                : "mt-[12px] mb-[8px] py-[8px]"
+                ? "mt-[16px] mb-[8px] border-primary-500 border-0 border-b-4"
+                : "mt-[16px] mb-[16px]"
             }
           >
             {content.navbar.faq}
@@ -34,8 +34,8 @@ const Header = () => {
             to="/AboutUs"
             className={({ isActive }) =>
               isActive
-                ? "mt-[12px] mb-[8px] py-[8px] border-primary-500 border-0 border-b-4"
-                : "mt-[12px] mb-[8px] py-[8px]"
+                ? "mt-[16px] mb-[8px] border-primary-500 border-0 border-b-4"
+                : "mt-[16px] mb-[16px]"
             }
           >
             {content.navbar.about}
