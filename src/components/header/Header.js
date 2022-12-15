@@ -48,7 +48,7 @@ const Header = () => {
           {content.emailText}
         </div>
         <button className="primary-button">
-          <Link to="/Download">{content.navbar.downloadButton}</Link>
+          <NavLink to="/Download">{content.navbar.downloadButton}</NavLink>
         </button>
       </div>
     </div>
