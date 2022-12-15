@@ -1,6 +1,6 @@
 import Header from "../header/Header";
-import content from "../../content/content";
 import { NavLink } from "react-router-dom";
+import changeLog from "../../content/change-log-content"
 
 const ChangeLog = () => {
   return (
@@ -12,8 +12,12 @@ const ChangeLog = () => {
         mobile:p-[16px] mobile:py-[32px] mobile:space-y-[32px]"
       >
         <h2 className="col-span-3 heading2">
-          {content.changeLog.title.header}
+          {changeLog.title.header}
         </h2>
+
+
+
+        {/** 
         <h3 className="col-span-3 heading3">{content.changeLog[11].header}</h3>
         <p className="body">{content.changeLog[11].text}</p>
 
@@ -21,6 +25,7 @@ const ChangeLog = () => {
           {content.changeLog[10.9].header}
         </h3>
         <p className="body">{content.changeLog[10.9].text}</p>
+        */}
       </div>
     </div>
   );
