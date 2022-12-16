@@ -21,3 +21,7 @@ export const CARD = [
     info: content.home.whyGruepr.forEducatorsText,
   },
 ];
+
+
+
+
