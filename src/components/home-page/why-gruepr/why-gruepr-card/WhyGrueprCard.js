@@ -2,8 +2,8 @@ function WhyGrueprCards(props) {
   return (
     <div
       className="bg-accent-50 border-solid border-accent-200 border-2 
-    laptop:p-7 laptop:py-8 laptop:space-y-4
-    mobile:p-[16px]"
+      laptop:p-7 laptop:py-8 laptop:space-y-4
+      mobile:p-[16px]"
     >
       <img
         className="object-none object-center m-auto"
