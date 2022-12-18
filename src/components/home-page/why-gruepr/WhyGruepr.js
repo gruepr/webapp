@@ -21,6 +21,7 @@ const WhyGruepr = () => {
             img={whygruepr.img}
             header={whygruepr.header}
             info={whygruepr.info}
+            alt={whygruepr.alt}
           />
         ))}
       </div>

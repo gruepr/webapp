@@ -8,7 +8,7 @@ export const CARD = [
     img: clipboard,
     header: content.home.whyGruepr.flexibleHeader,
     info: content.home.whyGruepr.flexibleText,
-    alt: "clip-board icon",
+    alt: "clipboard icon",
   },
   {
     img: security,
