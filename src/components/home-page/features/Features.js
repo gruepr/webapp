@@ -53,7 +53,7 @@ const Features = () => {
           <img
             class="object-cover w-full"
             src={opensource}
-            alt="Gruepr screenshot of survey creation feature"
+            alt="Gruepr screenshot of successful group formation screen"
           />
           <div class="resize-x space-y-3">
             <h2 class="heading2">
