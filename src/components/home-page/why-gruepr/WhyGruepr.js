@@ -18,6 +18,7 @@ const WhyGruepr = () => {
       >
         {CARD.map((whygruepr) => (
           <WhyGrueprCard
+            key={whygruepr.key}
             img={whygruepr.img}
             header={whygruepr.header}
             info={whygruepr.info}
