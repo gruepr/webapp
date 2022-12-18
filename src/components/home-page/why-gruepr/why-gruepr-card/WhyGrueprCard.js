@@ -8,7 +8,7 @@ function WhyGrueprCards(props) {
       <img
         class="object-none object-center m-auto"
         src={props.img}
-        alt="icon"
+        alt={props.alt}
       />
       <div class="space-y-2">
         <h3 class="heading3 text-center">{props.header}</h3>
