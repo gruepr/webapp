@@ -9,7 +9,7 @@ const Features = () => {
       <div className="flex flex-col justify-center items-center">
         {/* Create custom surveys */}
         <div
-          class="items-center grid grid-flow-row w-full 
+          className="items-center grid grid-flow-row w-full 
           mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2
           laptop:p-20 laptop:gap-8
           mobile:px-[16px] mobile:py-[32px] mobile:gap-[32px]"
@@ -28,7 +28,7 @@ const Features = () => {
         </div>
         {/* Maximize team compatibility */}
         <div
-          class="items-center grid grid-flow-row w-full 
+          className="items-center grid grid-flow-row w-full 
           mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2
           laptop:p-20 laptop:gap-8 
           mobile:px-[16px] mobile:py-[32px] mobile:gap-[32px]"
