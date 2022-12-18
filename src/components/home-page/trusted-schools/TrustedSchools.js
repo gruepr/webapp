@@ -7,7 +7,15 @@ export const TrustedSchools = () => {
       <h2 class="heading2 laptop:text-center tablet:text-center mobile:text-left">
         {content.home.trustedHeader}
       </h2>
-      <img class="object-cover w-full" src={Logos} alt="logos" />
+      <img
+        class="object-cover w-full"
+        src={Logos}
+        alt="School logos of The University of Tennessee, Santa Clara University, Rowan University, 
+        Ohio State University, Georgetown University, University of California Irvine, Monash University, Indiana University Bloomington,
+        Illinois State University, Newton South High School, City University of New York, Vin University, Regis College, 
+        Northeastern University, Texas A&M University, Universidad del Magdalena, University of Connecticut, University of San Carlos,
+        University of Houston, and Stockton University."
+      />
     </div>
   );
 };
