@@ -1,11 +1,10 @@
 # gruepr-webappp
 
-### Scout developers
+## Scout developers
 
 Contributions to this website were made by:
 
 Sarah Zhang
-
 Cynthia Cao ([cynthiacao.work@gmail.com](cynthiacao.work@gmail.com))
 
 ## Available Scripts
