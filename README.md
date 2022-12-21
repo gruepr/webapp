@@ -54,11 +54,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\\
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Tailwind
+## Tailwind
 
 [Tailwind](https://tailwindcss.com/) is a CSS framework that allows you to style elements without writing custom CSS. For example, the following code would make all the text white in a div: `<div className="text-white">` which can be done directly in the HTML. 
 
-### Config Files
+## Config Files
 
 `.`\
 `├── node_modules`\
