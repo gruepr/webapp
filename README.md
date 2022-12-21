@@ -60,10 +60,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Config Files
 
-`.
-├── node_modules\
-├── src\
-├── .gitignore\
+`.`\
+`├── node_modules`\
+`├── src`
+`├── .gitignore\
 ├── package-lock.json\
 ├── package.json\
 ├── postcss.config.js\
