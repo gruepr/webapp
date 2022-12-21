@@ -62,13 +62,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 `.`\
 `├── node_modules`\
-`├── src`
-`├── .gitignore\
-├── package-lock.json\
-├── package.json\
-├── postcss.config.js\
-├── README.md\
-└── tailwind.config.js`
+`├── src`\
+`├── .gitignore`\
+`├── package-lock.json`\
+`├── package.json`\
+`├── postcss.config.js`\
+`├── README.md`\
+`└── tailwind.config.js`
 
 `/node_modules` This directory tracks the dependencies installed locally via package.json (npm packages).
 
