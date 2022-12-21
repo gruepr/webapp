@@ -19,7 +19,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-You may need to install the following if you come across errors when running:\
+You may need to install the following if you come across errors when running:
+
 `npm install --save react-faq-component`\
 `npm install @headlessui/react`
 
@@ -60,13 +61,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ### Config Files
 
 `.
-├── node_modules
-├── src
-├── .gitignore
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── README.md
+├── node_modules\
+├── src\
+├── .gitignore\
+├── package-lock.json\
+├── package.json\
+├── postcss.config.js\
+├── README.md\
 └── tailwind.config.js`
 
 `/node_modules` This directory tracks the dependencies installed locally via package.json (npm packages).
