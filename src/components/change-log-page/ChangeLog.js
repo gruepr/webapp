@@ -12,11 +12,35 @@ const ChangeLog = () => {
       >
         <h2 className="col-span-3 heading2">Change Log</h2>
         <p className="body">Updated 2022-06-07</p>
-          {changeLog.map((curr) => (
-             <h2 className="col-span-3 heading3">
-             {curr.header}
-             <p className="body">{curr.text}</p>
-           </h2>))}
+        {changeLog.map((curr) => (
+          <div className="col-span-3">
+            <h3 className="col-span-3 heading3">{curr.header}</h3>
+            <div>
+              {curr.sections ? (
+                <div className="">
+                  {curr.sections.map((section) => (
+                    <div className="py-[12px]">
+                      <p className="body font-bold">{section.subhead}</p>
+                      <ul className="body list-disc pl-[24px]">
+                        {section.text.map((item) => (
+                          <li>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="">
+                  <ul className="body list-disc pl-[24px]">
+                    {curr.text.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
