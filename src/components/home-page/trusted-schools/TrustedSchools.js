@@ -1,4 +1,4 @@
-import Logos from "../../../img/Logos.svg";
+import Logos from "../../../img/logos.png";
 import content from "../../../content/content";
 
 export const TrustedSchools = () => {
