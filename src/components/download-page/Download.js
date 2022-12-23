@@ -54,6 +54,7 @@ const Download = () => {
               <a
                 href="https://github.com/gruepr/gruepr/blob/master/test_surveys/testdata.csv"
                 target="_blank"
+                rel="noreferrer"
               >
                 {content.downloadPage.downloadData}
               </a>
@@ -64,7 +65,7 @@ const Download = () => {
       <img
         className="object-fill w-[100%]"
         src={DownloadPageImage}
-        alt="decorative image"
+        alt="download page"
       />
       <Footer />
     </div>

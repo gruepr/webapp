@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
         <p className="body font-bold">{content.privacyPolicy.contactHeader}</p>
         <p className="body pb-6"> {content.privacyPolicy.contactText} </p>
       </div>
-      <img src={PrivacyImage} alt="decorative image" />
+      <img src={PrivacyImage} alt="privacy" />
       <Footer />
     </div>
   );
