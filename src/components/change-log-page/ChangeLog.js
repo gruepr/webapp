@@ -1,5 +1,7 @@
 import Header from "../header/Header";
 import changeLog from "../../content/change-log-content";
+import Footer from "../footer/Footer.js";
+import Image from "../../img/privacypolicy-bg.svg";
 
 const ChangeLog = () => {
   return (
@@ -15,8 +17,9 @@ const ChangeLog = () => {
         {changeLog.map((curr) => (
           <div className="col-span-3">
             <h3 className="col-span-3 heading3">{curr.header}</h3>
-            <div>
+            <div className="space-y-[32px]">
               {curr.sections ? (
+                // handles updates with sections
                 <div className="">
                   {curr.sections.map((section) => (
                     <div className="py-[12px]">
@@ -42,6 +45,8 @@ const ChangeLog = () => {
           </div>
         ))}
       </div>
+      <img src={Image} alt="decorative image" />
+      <Footer />
     </div>
   );
 };

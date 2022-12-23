@@ -396,7 +396,7 @@ const changeLog = [
   {
     header: "9.3.1",
     text: [
-      `Minor bugfixes: greupr failing when reading in a blank value in the csv datafile, surveymaker loading incorrect attribute response options from a saved survey file`,
+      `Minor bugfixes: gruepr failing when reading in a blank value in the csv datafile, surveymaker loading incorrect attribute response options from a saved survey file`,
     ],
   },
 
