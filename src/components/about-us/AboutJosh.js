@@ -9,7 +9,11 @@ const AboutJosh = () => {
         laptop:flex-row laptop:space-x-8
         mobile:flex-col mobile:space-x-0 mobile:space-y-3"
       >
-        <img src={joshImage} className="h-[19rem] mobile:h-[18.75rem]" />
+        <img
+          src={joshImage}
+          alt="Joshua Hertz"
+          className="h-[19rem] mobile:h-[18.75rem]"
+        />
         <div className="flex flex-col space-y-2">
           <h2 class="heading2 laptop:text-left mobile:text-center">
             {content.aboutUs.backstory.header}
