@@ -3,11 +3,16 @@ import content from "../../content/content";
 export const YouTube = () => {
   return (
     <div>
-      <div className="flex flex-row">
-        <div className="px-20 ">
-          <h1 class="py-5 body font-bold">
+      <div
+        className="grid mobile:grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3
+        mobile:place-items-center mobile:gap-y-[20px]
+        tablet:place-items-start tablet:gap-x-[24px]
+        desktop:px-[112px]"
+      >
+        <div>
+          <p class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.appOverview}
-          </h1>
+          </p>
           <iframe
             width="300"
             height="200"
@@ -18,8 +23,9 @@ export const YouTube = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <div className="px-20">
-          <h1 class="py-5 body font-bold">
+
+        <div>
+          <h1 class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.surveyMakerOverview}
           </h1>
           <iframe
@@ -32,8 +38,9 @@ export const YouTube = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <div className="px-20">
-          <h1 class="py-5 body font-bold">
+
+        <div>
+          <h1 class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.grueprOverview}
           </h1>
           <iframe
@@ -46,10 +53,8 @@ export const YouTube = () => {
             allowfullscreen
           ></iframe>
         </div>
-      </div>
-      <div className="flex flex-row">
-        <div className="px-20">
-          <h1 class="py-5 body font-bold">
+        <div>
+          <h1 class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.surveyMakerAttributes}
           </h1>
           <iframe
@@ -62,8 +67,8 @@ export const YouTube = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <div className="px-20">
-          <h1 class="py-5 body font-bold">
+        <div>
+          <h1 class="py-[20px] body font-bold">
             {content.faq.howGrueprWorks.surveyMakerTimezoneSched}
           </h1>
           <iframe

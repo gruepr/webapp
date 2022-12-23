@@ -1,15 +1,15 @@
-
 const data = {
-    
-
-    rows: [ {
-        title: 'How do I set the name of each team?',
-        content: 'Use the “Set team names:” Drop-down list selection on the bottom right after you load in your data to gruepr and make optimal teams! There is an option in the box to make custom team names.',
+  rows: [
+    {
+      title: "How do I set the name of each team?",
+      content:
+        "Use the “Set team names:” Drop-down list selection on the bottom right after you load in your data to gruepr and make optimal teams! There is an option in the box to make custom team names.",
     },
 
     {
-        title: 'What if I want to make my own survey question(s)?',
-        content: 'Simply add an "Attribute" to your survey in Surveymaker! You can choose from a list of student responses as well.',
+      title: "What if I want to make my own survey question(s)?",
+      content:
+        'Simply add an "Attribute" to your survey in Surveymaker! You can choose from a list of student responses as well.',
     },
 
     {
@@ -18,17 +18,16 @@ const data = {
     },
 
     {
-        title: 'How do the weighted rules work?',
-        content: 'The gruepr algorithm first focuses on satisfying the unweighted rules (Team size, Gender, URM, required/requested teammates), then tries to satisfy the weighted rules (Attributes and meeting times).',
+      title: "How do the weighted rules work?",
+      content:
+        "The gruepr algorithm first focuses on satisfying the unweighted rules (Team size, Gender, URM, required/requested teammates), then tries to satisfy the weighted rules (Attributes and meeting times).",
     },
 
     {
-        title: 'What do the Required/Incompatible Attributes mean?',
-        content: 'Use the required attributes if every single team must have this attribute at least once. Use the incompatible attributes if students with certain attributes should not be on the same team.',
+      title: "What do the Required/Incompatible Attributes mean?",
+      content:
+        "Use the required attributes if every single team must have this attribute at least once. Use the incompatible attributes if students with certain attributes should not be on the same team.",
     },
-    ],
-
-   
-
-}; export default data;
-
+  ],
+};
+export default data;

@@ -27,3 +27,7 @@ export const CARD = [
     alt: "glasses icon",
   },
 ];
+
+
+
+
