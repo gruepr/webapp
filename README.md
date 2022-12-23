@@ -1,12 +1,5 @@
 # gruepr-webappp
 
-## Scout developers
-
-Contributions to this website were made by:
-
-Sarah Zhang\
-Cynthia Cao
-
 ## Available Scripts
 
 In the project directory, you can run:
