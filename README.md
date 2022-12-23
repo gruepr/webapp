@@ -78,3 +78,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 `README.md` This is a text file containing useful reference information about the project.
 
 `tailwind.config.js` This file is where you can customize your Tailwind configuration. It currently contains custom colors, font sizes, and background images.
+
+### Scout developers
+
+The contributions to this website were made by:
+
+Sarah Zhang
+
+Cynthia Cao
