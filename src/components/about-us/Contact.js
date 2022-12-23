@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="laptop:space-y-4 mobile:space-y-5">
           <p class="body">{content.aboutUs.contact.submitIssue}</p>
           <button className="secondary-button outline outline-neutral-500">
-            <a target="_blank" href="https://github.com/gruepr/gruepr/issues">
+            <a target="_blank" rel="noreferrer" href="https://github.com/gruepr/gruepr/issues">
               {content.aboutUs.contact.issueTracker}
             </a>
           </button>
@@ -23,7 +23,7 @@ const Contact = () => {
       <img
         class="object-cover w-full"
         src={DecorativeImage}
-        alt="decorative image"
+        alt="decorative"
       />
     </div>
   );
