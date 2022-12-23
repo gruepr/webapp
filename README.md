@@ -5,7 +5,7 @@
 Contributions to this website were made by:
 
 Sarah Zhang\
-Cynthia Cao ([cynthiacao.work@gmail.com](cynthiacao.work@gmail.com))
+Cynthia Cao
 
 ## Available Scripts
 
