@@ -2,7 +2,7 @@
   "name": "gruepr-webapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gruepr.github.io/gruepr-webapp/",
+  "homepage": "https://www.gruepr.com",
   "dependencies": {
     "@headlessui/react": "^1.7.5",
     "@testing-library/jest-dom": "^5.16.5",
