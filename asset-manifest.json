@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gruepr-webapp/static/css/main.9c21c05a.css",
-    "main.js": "/gruepr-webapp/static/js/main.b83b90a5.js",
+    "main.js": "/gruepr-webapp/static/js/main.3f5d089d.js",
     "static/js/787.249e068f.chunk.js": "/gruepr-webapp/static/js/787.249e068f.chunk.js",
     "static/media/Logos.svg": "/gruepr-webapp/static/media/Logos.013bbef8d03a25ff1bc11b5422f33dae.svg",
     "static/media/team-compatibility.svg": "/gruepr-webapp/static/media/team-compatibility.9c48523ee105fd967009546c91e1b1cd.svg",
@@ -21,11 +21,11 @@
     "static/media/clipboard.svg": "/gruepr-webapp/static/media/clipboard.f46a213ebc3474d8af343c5d03649192.svg",
     "static/media/hamburger.svg": "/gruepr-webapp/static/media/hamburger.fde432db46d96494655598eb6c718965.svg",
     "main.9c21c05a.css.map": "/gruepr-webapp/static/css/main.9c21c05a.css.map",
-    "main.b83b90a5.js.map": "/gruepr-webapp/static/js/main.b83b90a5.js.map",
+    "main.3f5d089d.js.map": "/gruepr-webapp/static/js/main.3f5d089d.js.map",
     "787.249e068f.chunk.js.map": "/gruepr-webapp/static/js/787.249e068f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c21c05a.css",
-    "static/js/main.b83b90a5.js"
+    "static/js/main.3f5d089d.js"
   ]
 }
