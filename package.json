@@ -1,7 +1,7 @@
 {
   "name": "gruepr-webapp",
   "version": "0.1.0",
-  "homepage": "https://www.gruepr.com/",
+  "homepage": "https://www.gruepr.com",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.5",
