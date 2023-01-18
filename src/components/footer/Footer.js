@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="text-2xl pb-2 paytone text-neutral-500">gruepr</div>
         <div className="tablet:flex mobile:hidden">
           <div className="text-base font-bold dmsans text-neutral-500 text-decoration-line: underline space-x-4">
-            <Link to="/Faqs">{content.footer.howItWorks}</Link>
             <Link to="/Faqs">{content.footer.faq}</Link>
             {/* Make Survey function does not exist on the website yet */}
             {/* <Link to="/Faqs">{content.footer.makeSurvey}</Link> */}
