@@ -12,7 +12,6 @@ const content = {
 
   // ----- Footer ----- //
   footer: {
-    howItWorks: "How It Works",
     faq: "FAQs",
     makeSurvey: "Make a Survey",
     privacyPolicy: "Privacy Policy",
