@@ -1,6 +1,20 @@
 // Change Log
 const changeLog = [
   {
+    header: "11.1",
+    text: [
+      `bugfix: corrected regex recognition of the word "and" in the preferred-teammates and preferred-non-teammates fields of a student record by requiring a space on either side of the word (so doesn't match, e.g., "Sanders")`,
+      `bugfix: corrected the shifting of schedules when students are submitting a schedule based on their own home timezone, including when there are 7 days in the schedule so need to wrap around Saturday <--> Sunday`,
+      `updated UI in the required attributes and incompatible attributes dialogs by making text and selection areas scrollable (needed when # of values is large, and thus window is too tall for screen)`,
+      `updated UI for the add student and edit student dialogs by making scrollable (needed most when a select-multiple-options attribute has a lot of options, and thus window is too tall for screen)`,
+      `added option to edit schedule in the add student and edit student dialogs (including flipping an existing schedule)`,
+      `added option to form teams from all students in all sections, but separated by section`,
+      `added timeout to canvas and google connections`,
+      `added Canvas quiz upload to surveymaker's create survey UI buttons`,
+    ],
+  },
+
+{
     header: "11.0 - MAJOR UPDATE",
     text: [
       `fully integrated SurveyMaker and gruepr with Canvas and Google (NOTE: Canvas in beta--for now uses a user-generated token instead of OAuth token)`,
