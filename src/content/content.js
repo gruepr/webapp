@@ -106,7 +106,7 @@ const content = {
       free and open source for my fellow educators. The first version of the app was named "grouper," and that 
       inspired my scuba-diving colleage to give me a fish logo. The name later changed to "gruepr" because the challenges 
       of developing my first app reminded me of trying to avoid the fictional monster 
-      that haunts the dark in the first computer game I remember ever playing.`,
+      that haunts the dark in Zork, the first computer game I remember ever playing.`,
     },
 
     contact: {
