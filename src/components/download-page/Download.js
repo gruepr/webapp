@@ -52,9 +52,10 @@ const Download = () => {
             <p className="body">{content.downloadPage.trySample}</p>
             <button className="secondary-button outline outline-neutral-500">
               <a
-                href="https://github.com/gruepr/gruepr/blob/master/test_surveys/testdata.csv"
+                href="https://raw.githubusercontent.com/gruepr/gruepr/master/test_surveys/testdata.csv"
                 target="_blank"
                 rel="noreferrer"
+                download
               >
                 {content.downloadPage.downloadData}
               </a>
