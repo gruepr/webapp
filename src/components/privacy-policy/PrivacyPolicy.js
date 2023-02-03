@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <Header />
-      <div class="tablet:px-16 tablet:pt-14 mobile:p-[16px] mobile:py-[32px] mobile:space-y-[32px">
+      <div class="tablet:px-16 tablet:pt-14 mobile:p-[16px] mobile:py-[32px] mobile:space-y-[32px]">
         <h2 className="heading2 pb-8">{content.privacyPolicy.header}</h2>
         <p className="body pb-6">{content.privacyPolicy.beginningP1}</p>
         <p className="body pb-6">{content.privacyPolicy.beginningP2}</p>
