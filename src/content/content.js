@@ -8,6 +8,7 @@ export default {
     home: "Gruepr",
     faq: "FAQs",
     about: "About Us",
+    surveyhome: "Survey",
     downloadButton: "Download",
   },
 
@@ -119,6 +120,16 @@ export default {
         "If you find bugs or have ideas about how to improve gruepr, please contact Joshua Hertz at info@gruepr.com.",
     },
   },
+
+// ----- SurveyHome page ----- //
+surveyHome: {
+  sd: {
+    header: "Make a survey with Gruepr",
+    text: `Creating the most optimal grueps is easy! Get started by using our five step survey making flow below.`,
+    button: "Get Started"
+  },
+
+},  
 
   // ----- Privacy Policy page ----- //
   privacyPolicy: {

@@ -1,0 +1,413 @@
+const Demo = () => {
+  const [show, setShow] = useState({
+    show1: false,
+    show2: false,
+    show3: false,
+    show4: false,
+  });
+
+  const handleShowToggle = (key) => {
+    setShow((prevShow) => ({ ...prevShow, [key]: !prevShow[key] }));
+  };
+
+  return (
+    <div className="flow-root items-center bg-white px-16 py-1">
+      <Header />
+      <div className="w-full left-0 items-center text-white text-2xl pb-2 bg-neutral-500 px-8 py-3">
+        Demographic Questions
+      </div>
+      <div className="grid grid-cols-2 gap-4">
+        <div className="wrapper display-flex flex flex-col items-center justify-center py-10 text-neutral-500 text-light text-left font-regular dmsans space-y-4">
+          <button className="primary-button bg-primary-50 text-neutral-500 px-4 text-left" style={{ width: "640px", height: "56px" }}>
+            First Name*
+          </button>
+          <button className="primary-button bg-primary-50 text-neutral-500 px-4 text-left" style={{ width: "640px", height: "56px" }} onClick={() => loadClient().then(execute)}>
+            Last Name
+            <label className="inline-flex relative left-[30rem] items-center cursor-pointer">
+              <input type="checkbox" value="" className="sr-only peer" onClick={() => handleShowToggle("show1")} />
+              <div className={`w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 ${show.show1 ? "dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white" : ""} after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all ${show.show1 ? "peer-checked:bg-primary-500" : ""}`}></div>
+            </label>
+          </button>
+          <button className="primary-button bg-primary-50 text-neutral-500 px-4 text-left" style={{ width: "640px", height: "56px" }}>
+            Email
+            <label className="inline-flex relative left-[32.5rem] items-center cursor-pointer">
+              <input type="checkbox" value="" className="sr-only peer" onClick={() => handleShowToggle("show2")} />
+              <div className={`w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 ${show.show2 ? "dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white" : ""} after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all ${show.show2 ? "peer-checked:bg-primary-500" : ""}`}></div>
+            </label>
+          </button>
+          <button className="primary-button bg-primary-50 text-neutral-500 px-4 text-left" style={{ width: "640px", height: "56px" }}>
+            Pronouns
+            <label className="inline-flex relative left-[30.5rem] items-center cursor-pointer">
+              <input type="checkbox" value="" className="sr-only peer" onClick={() => handleShowToggle("show3")} />
+              <div className={`w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 ${show.show3 ? "dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white" : ""} after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all ${show.show3 ? "peer-checked:bg-primary-500" : ""}`}></div>
+            </label>
+          </button>
+          <button className="primary-button bg-primary-50 text-neutral-500 items-center px-4 text-left" style={{ width: "640px", height: "56px" }}>
+            Timezone
+            <label className="inline-flex relative left-[30.2rem] items-center cursor-pointer">
+              <input type="checkbox" value="" className="sr-only peer" onClick={() => handleShowToggle("show4")} />
+              <div className={`w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 ${show.show4 ? "dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white" : ""} after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all ${show.show4 ? "peer-checked:bg-primary-500" : ""}`}></div>
+            </label>
+          </button>
+        </div>
+
+
+
+
+
+
+        const Demo = () => {
+          const [show,setShow]=useState(false);
+          const [show1,setShow1]=useState(false);
+          const [show2,setShow2]=useState(false);
+          const [show3,setShow3]=useState(false);
+          const [show4,setShow4]=useState(false);
+          return (
+            
+        <div className="flow-root items-center bg-white px-16 py-1">
+        <Header />
+        <div className=" w-full left-0 items-center text-white text-2xl pb-2 bg-neutral-500 px-8 py-3">
+          Demographic Questions
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <div className="wrapper display-flex flex flex-col items-center justify-center 
+        py-10 text-neutral-500 text-light text-left font-regular dmsans space-y-4">
+        
+        <button className="primary-button bg-primary-50 text-neutral-500 px-4 text-left"  style={{width: "640px", height: "56px"}}>
+          First Name*
+        </button>
+        <button className="primary-button bg-primary-50 text-neutral-500 px-4 text-left" style={{width: "640px", height: "56px"}} onClick={() => loadClient().then(execute)}>
+          Last Name
+          <label class="inline-flex relative left-[30rem] items-center cursor-pointer" >
+          <input type="checkbox" value="" class="sr-only peer" onClick={()=>setShow(!show)} />
+          <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
+          dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full 
+          peer-checked:after:border-white after:content-[''] 
+          after:absolute after:top-0.5 after:left-[2px] after:bg-white 
+          after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-500"></div>
+        </label>
+        </button>
+        <script>
+          document.write(myFormid)
+        </script>
+        <button className="primary-button bg-primary-50 text-neutral-500 px-4 text-left"  style={{width: "640px", height: "56px"}} onClick={() => loadClient().then(del)}>
+          Email
+          <label class="inline-flex relative left-[32.5rem] items-center cursor-pointer">
+          <input type="checkbox" value="" class="sr-only peer" onClick={()=>setShow1(!show1)}/>
+          <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
+          dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full 
+          peer-checked:after:border-white after:content-[''] 
+          after:absolute after:top-0.5 after:left-[2px] after:bg-white 
+          after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-500"></div>
+        </label>
+        </button>
+        <button className="primary-button bg-primary-50 text-neutral-500 px-4 text-left"  style={{width: "640px", height: "56px"}}>
+          Pronouns
+          <label class="inline-flex relative left-[30.5rem] items-center cursor-pointer">
+          <input type="checkbox" value="" class="sr-only peer" onClick={()=>setShow2(!show2)}/>
+          <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
+          dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full 
+          peer-checked:after:border-white after:content-[''] 
+          after:absolute after:top-0.5 after:left-[2px] after:bg-white 
+          after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-500"></div>
+        </label>
+        </button>
+        <button className=" primary-button bg-primary-50 text-neutral-500 px-4 text-left"  style={{width: "640px", height: "56px"}}>
+          Race
+          <label class="inline-flex relative left-[32.5rem] items-center cursor-pointer">
+          <input type="checkbox" value="" class="sr-only peer" onClick={()=>setShow3(!show3)}/>
+          <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
+          dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full 
+          peer-checked:after:border-white after:content-[''] 
+          after:absolute after:top-0.5 after:left-[2px] after:bg-white 
+          after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-500"></div>
+        </label>
+        </button>
+        <button className="primary-button bg-primary-50 text-neutral-500 items-center px-4 text-left"  style={{width: "640px", height: "56px"}}>
+          Timezone
+          <label class="inline-flex relative left-[30.2rem] items-center cursor-pointer">
+          <input type="checkbox" value="" class="sr-only peer" onClick={()=>setShow4(!show4)}/>
+          <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
+          dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full 
+          peer-checked:after:border-white after:content-[''] 
+          after:absolute after:top-0.5 after:left-[2px] after:bg-white 
+          after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-500"></div>
+        </label>
+        </button>
+        </div>
+
+
+
+        const Demo = () => {
+          const [show,setShow]=useState(false);
+          const [show1,setShow1]=useState(false);
+          const [show2,setShow2]=useState(false);
+          const [show3,setShow3]=useState(false);
+          const [show4,setShow4]=useState(false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Previous MC Code
+
+
+const MC = () => {
+  
+
+  const [show, setShow] = useState(false);
+  const [show1, setShow1] = useState(false);
+  const [show2, setShow2] = useState(false);
+  const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
+
+  
+  const handleQuestionChange = (index, newValue) => {
+    setQuestions((prevQuestions) => {
+      const updatedQuestions = [...prevQuestions];
+      updatedQuestions[index].question = newValue;
+      return updatedQuestions;
+    });
+  };
+
+  const handleOptionChange = (index, newValue) => {
+    setQuestions((prevQuestions) => {
+      const updatedQuestions = [...prevQuestions];
+      updatedQuestions[index].option = newValue;
+      return updatedQuestions;
+    });
+  };
+
+  const [questions, setQuestions] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const options = ['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'];
+  const [selectedOption, setSelectedOption] = useState(options[0]);
+
+  const toggleDropdown = (index) => {
+    setIsOpen(!isOpen);
+    setDropdownStates((prevStates) => {
+      const updatedStates = [...prevStates];
+      updatedStates[index] = !updatedStates[index];
+      return updatedStates;
+    });
+  };
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+
+  const [dropdownStates, setDropdownStates] = useState(
+    Array.from({ length: 5 }, () => false) // Assuming 5 questions to start with
+  );
+
+  const handleAddQuestion = () => {
+    setQuestions((prevQuestions) => [
+      ...prevQuestions,
+      { id: prevQuestions.length + 1, question: '', option: options[0] },
+    ]);
+
+    setDropdownStates((prevStates) => [...prevStates, false]);
+  };
+
+  const handleDeleteQuestion = (index) => {
+    setQuestions((prevQuestions) => {
+      const updatedQuestions = [...prevQuestions];
+      updatedQuestions.splice(index, 1);
+      return updatedQuestions;
+    });
+
+    setDropdownStates((prevStates) => {
+      const updatedStates = [...prevStates];
+      updatedStates.splice(index, 1);
+      return updatedStates;
+    });
+  };
+
+  
+
+  return (
+     <div className="bg-white flow-root items-center px-16 py-1">
+      <div className="grid grid-cols-1 gap-4">
+        
+        {questions.map((question, index) => (
+          <div
+            key={question.id}
+            className="w-[43rem] h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-6 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans"
+          >
+            
+             <button className="relative Right"
+              onClick={() => handleDeleteQuestion(index)}
+            >
+              <svg
+                className="w-4 h-4"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            
+            
+            {/* Question */}
+            <h1>Question {question.id}</h1>
+            <div className="display-flex flex flex-col gap-2">
+              <p className="text-12 text-neutral-300">Question</p>
+              <input
+                type="text"
+                value={question.question}
+                placeholder="Type your question..."
+                className="bg-white text-neutral-500 items-center text-light py-3 px-4 text-left"
+                style={{ width: '648px', height: '48px' }}
+                onChange={(e) => handleQuestionChange(index, e.target.value)}
+              />
+               {/* Delete icon */}
+
+             
+
+
+            <p className="text-12 text-neutral-300">Response Type</p>
+            {/* Response Type Dropdown */}
+            <div className="dropdown">
+                <div
+                  className={`select ${dropdownStates[index] ? 'select-clicked' : ''}`}
+                  onClick={() => toggleDropdown(index)}
+                >
+                  <span className="selected">{question.option}</span>
+                  <div className={`caret ${dropdownStates[index] ? 'caret-rotate' : ''}`}></div>
+                </div>
+
+<p className="text-12 text-neutral-300">Options</p>
+              <input
+                type="text"
+                value={question.option}
+                placeholder="Type your options..."
+                className="bg-white text-neutral-500 items-center text-light py-3 px-4 text-left"
+                style={{ width: '648px', height: '48px' }}
+                onChange={(e) => handleOptionChange(index, e.target.value)}
+              />
+
+                {dropdownStates[index] && (
+                  <ul className="menu">
+                    {options.map((option, optionIndex) => (
+                      <li
+                        key={optionIndex}
+                        className={` ${option === question.option ? 'active' : ''}`}
+                        onClick={() => {
+                          setSelectedOption(option);
+                          toggleDropdown(index);
+                        }}
+                      >
+                        {option}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                
+              </div>
+              
+            </div>
+            <div class="flex items-center">
+    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="link-checkbox" class="text-12 text-neutral-300 px-2 py-5">
+    Allow Students to select multiple options
+    </label>
+</div>
+           
+          </div>
+          
+          
+        ))}
+
+
+      {/* Add your Questions button */}
+      <button
+        type="button"
+        className="w-[43rem] h-[1.25rem] wrapper display-flex items-center inline-flex px-4 py-5 gap-6 text-primary-500 bg-primary-50 text-light text-left font-regular dmsans"
+        onClick={handleAddQuestion}
+      >
+        {/* Add your Questions button SVG code... */}
+<svg class="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+Add your Questions
+  </button>
+
+    </div>
+    </div>
+  );
+};
+
+export default MC;
+
+
+
+// <div className="w-[43rem] h-auto wrapper display-flex flex flex-col items-left 
+// px-4 py-5 gap-6 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans grid grid-cols-1 gap-4">
+
+// <div class="right">
+// <button onClick={()=>setShow(show)}>
+// <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+//   <path d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" stroke-linecap="round" stroke-linejoin="round"></path>
+// </svg>
+// </button>
+// </div>
+
+// <h1>Question 1</h1>
+// <div className="display-flex flex flex-col gap-2">
+// <p className="text-12 text-neutral-300">Question</p>
+// <span className="bg-white text-neutral-500 items-center text-light py-3 px-4 text-left"  style={{width: "648px", height: "48px"}}>
+//       What is your Experience with R Studio?
+// </span>
+
+// <p className="text-12 text-neutral-300">Response Type</p>
+
+// <div className="dropdown">
+//       <div className={`select ${isOpen ? 'select-clicked' : ''}`} onClick={toggleDropdown}>
+//         <span className="selected">{selectedOption}</span>
+//         <div className={`caret ${isOpen ? 'caret-rotate' : ''}`}></div>
+//       </div>
+//       {isOpen && (
+//         <ul className="menu">
+//           {options.map((option, index) => (
+//             <li
+//               key={index}
+//               className={` ${option === selectedOption ? 'active' : ''}`}
+//               onClick={() => handleOptionClick(option)}
+//             >
+//               {option}
+//             </li>
+//           ))}
+//         </ul>
+//       )}
+//     </div>
+
+// <div class="flex items-center">
+//     <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+//     <label for="link-checkbox" class="text-12 text-neutral-300 px-2 py-5">
+//     Allow Students to select multiple options
+//     </label>
+// </div>
+// </div>
+// </div>
+

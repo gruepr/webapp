@@ -12,6 +12,7 @@ const Header = () => {
           {/* <Link to="/"> {content.navbar.home} </Link> */}
           <Link to="/Faqs"> {content.navbar.faq} </Link>
           <Link to="/AboutUs"> {content.navbar.about} </Link>
+          <Link to="/SurveyUI"> {content.navbar.surveyhome} </Link>
         </div>
       </div>
       <div className="float-right flex items-center justify-center h-20 space-x-8">
