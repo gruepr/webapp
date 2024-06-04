@@ -11,11 +11,12 @@ import { gapi } from "gapi-script";
 import React,{useState} from 'react';
 import { getValue } from "@testing-library/user-event/dist/utils";
 import { handleFormId } from './formutils';
+import { C_ID, A_KEY, SCOP } from './config';
 
 
-const CLIENT_ID = "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"
-const API_KEY = "AIzaSyClDnIa2ktzsPMWAe5mImig1YBYfJFWgjA"
-const SCOPES = "https://www.googleapis.com/auth/drive"
+const CLIENT_ID = {C_ID}
+const API_KEY = {A_KEY}
+const SCOPES = {SCOP}
 
 function authenticate() {
   return gapi.auth2.getAuthInstance()
@@ -25,7 +26,7 @@ function authenticate() {
 }
 
 function loadClient() {
-  gapi.client.setApiKey("AIzaSyClDnIa2ktzsPMWAe5mImig1YBYfJFWgjA");
+  gapi.client.setApiKey(A_KEY);
   return gapi.client.load("https://forms.googleapis.com/$discovery/rest?version=v1")
       .then(function() { console.log("GAPI client loaded for API"); },
             function(err) { console.error("Error loading GAPI client for API", err); });
@@ -55,7 +56,7 @@ function execute() {
 }
 
 gapi.load("client:auth2", function() {
-  gapi.auth2.init({client_id: "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"});
+  gapi.auth2.init({client_id: C_ID});
 });
 
 
