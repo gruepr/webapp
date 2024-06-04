@@ -14,6 +14,7 @@ import Demographic from "./components/survey/Demographic";
 import * as React from "react";
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { DataProvider } from './components/survey/context';
 
 
 const CLIENT_ID = "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <DataProvider>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Faqs" element={<Faqs />} />
@@ -39,6 +41,7 @@ function App() {
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/Preview" element={<Preview />} />
       </Routes>
+      </DataProvider>
     </div>
   );
 }

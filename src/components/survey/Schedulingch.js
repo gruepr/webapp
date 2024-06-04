@@ -6,6 +6,7 @@ import React,{useState, useEffect, createContext} from 'react';
 import InputForm from "./InputForm";
 import { gapi } from "gapi-script";
 import { storedFormId } from './formutils';
+import { useData } from './context';
 
 const UserContext = createContext()
 const CLIENT_ID = "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"
@@ -106,14 +107,13 @@ const Schedulingch = () => {
   };
 
   const [questions, setQuestions] = useState([]);
-  const [optionsPlaceholder, setOptionsPlaceholder] = useState('Type your options...');
-  const [selectedQuestion, setSelectedQuestion] = useState(null);
-
-  const [isButtonToggled, setIsButtonToggled] = useState(false);
 
   const [actButtons, setActButtons] = useState(Array(6).fill(false));
 
+  const { activeButtons, setButtonActive } = useData();
+
   const handleButtonClick = (buttonIndex) => {
+    setButtonActive(buttonIndex, !activeButtons[buttonIndex]);
     setActButtons((prevActButtons) =>
       prevActButtons.map((active, index) => {
         if (index === buttonIndex) {
@@ -395,223 +395,3 @@ Next Step
 };
 
 export default Schedulingch;
-
-{/* 
-// const Schedulingch = () => {
-
-//   const [show,setShow]=useState(false);
-//   const [show1,setShow1]=useState(false);
-//   const [show2,setShow2]=useState(false);
-//   const [show3,setShow3]=useState(false);
-//   const [show4,setShow4]=useState(false);
-
-//   const [timezones, setTimezones] = useState([]);
-//   const [selectedTimezone, setSelectedTimezone] = useState('');
-
-//   useEffect(() => {
-//     const allTimezones = Intl
-//       .DateTimeFormat()
-//       .resolvedOptions()
-//       .timeZone;
-
-//     const uniqueTimezones = [...new Set(allTimezones)];
-//     setTimezones(uniqueTimezones);
-//     setSelectedTimezone(uniqueTimezones[0]); // Set default timezone
-//   }, []);
-
-//   const handleTimezoneChange = (event) => {
-//     setSelectedTimezone(event.target.value);
-//   };
- 
-// return (
-    
-// <div className="bg-white flow-root items-center px-16 py-1">
-// <Header />
-// <div className=" w-full left-0 items-center text-white text-2xl pb-2 bg-neutral-500 px-8 py-3">
-//   Multiple Choice Questions
-// </div>
-// <div class="grid grid-cols-2 gap-4">
-//     <div className="wrapper display-flex flex flex-col items-left justify-center 
-// py-10 space-y-4">
-
-// <div className="w-[43rem] h-[1.25rem] wrapper display-flex flex flex-col items-left justify-center
-// px-4 py-5 gap-6 text-neutral-500 bg-accent-50 text-12 text-left font-regular dmsans">
-// Unsure of what to ask? Take a look at some example questions!
-// </div>
-
-// <div className="w-[43rem] wrapper display-flex flex flex-col items-left 
-// px-4 py-5 gap-6 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
-
-
-// <div class="flex flex-row">
-// <div class="basis-11/12">
-// <h1>Timezone</h1>
-// </div>
-// <div class="basis-1/12">
-// <label class="inline-flex relative items-center cursor-pointer" >
-//   <input type="checkbox" value="" class="sr-only peer" onClick={()=>setShow(!show)} />
-//   <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
-//   dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full 
-//   peer-checked:after:border-white after:content-[''] 
-//   after:absolute after:top-0.5 after:left-[2px] after:bg-white 
-//   after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-500"></div>
-// </label>
-// </div>
-// </div>
-
-
-// <div className="display-flex flex flex-col gap-2">
-
-// <div className="display-flex flex flex-col gap-2">
-// <p className="text-12 text-neutral-300">Select Timezone</p>
-// <div className="dropdown">
-//         <div className="select">
-//           <span className="selected">{selectedTimezone}</span>
-//           <select value={selectedTimezone} onChange={handleTimezoneChange}>
-//             {timezones.map((timezone, index) => (
-//               <option key={index} value={timezone}>
-//                 {timezone}
-//               </option>
-//             ))}
-//           </select>
-//           <div className="caret"></div>
-//         </div>
-//       </div>
-// </div>
-
-
-// <div class="flex items-center">
-//     <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-//     <label for="link-checkbox" class="text-12 text-neutral-300 px-2 py-1">
-//     Allow Students to select multiple options
-//     </label>
-// </div>
-// </div>
-// </div>
-
-// <div className="w-[43rem] wrapper display-flex flex flex-col items-left 
-// px-4 py-5 gap-6 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
-
-
-// <div class="flex flex-row">
-// <div class="basis-11/12">
-// <h1>Schedule</h1>
-// </div>
-// <div class="basis-1/12">
-// <label class="inline-flex relative items-center cursor-pointer" >
-//   <input type="checkbox" value="" class="sr-only peer" onClick={()=>setShow(!show)} />
-//   <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
-//   dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full 
-//   peer-checked:after:border-white after:content-[''] 
-//   after:absolute after:top-0.5 after:left-[2px] after:bg-white 
-//   after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-500"></div>
-// </label>
-// </div>
-// </div>
-
-// <div className="display-flex flex flex-col gap-2">
-// <p className="text-12 text-neutral-300">Select Days</p>
-
-// <div class="dropdown" onClick={()=>setShow1(!show1)}>
-//   <div class="select">
-//     <span class="selected">Choose your day</span>
-//     <div class="caret"></div>
-//   </div>
-// </div>
-
-// <p className="text-12 text-neutral-300">Time</p>
-// <div className="w-[43rem] h-[1.25rem] wrapper display-flex items-center inline-flex py-5 gap-6 text-primary-500 text-light text-left font-regular dmsans">
-// <span className="bg-white text-neutral-500 items-center text-light py-3 px-4 text-left"  style={{width: "314px", height: "48px"}}>
-//       HH:MM AM/PM
-// </span>
-// <span className="bg-white text-neutral-500 items-center text-light py-3 px-4 text-left"  style={{width: "314px", height: "48px"}}>
-//       HH:MM AM/PM
-// </span>
-// </div>
-
-// <div className="display-flex flex flex-col gap-2">
-// <p className="text-12 text-neutral-300">Frequency</p>
-
-// <div class="dropdown" onClick={()=>setShow1(!show1)}>
-//   <div class="select">
-//     <span class="selected">Every 30 Minutes</span>
-//     <div class="caret"></div>
-//   </div>
-// </div>
-// </div>
-// </div>
-// </div>
-
-// </div>
-
-// <div className="wrapper display-flex flex flex-col items-center justify-center 
-// py-2 text-neutral-500 bg-neutral-50 text-light text-left font-regular dmsans">
-//       {
-//         <div className="wrapper display-flex flex flex-col items-left justify-center 
-//     py-5 text-neutral-500 text-light text-left font-regular dmsans">
-//         <p className="text-12 text-neutral-300">What is your expereince with R Studio?</p>
-//         <span className="bg-white text-neutral-500 text-light py-3 px-4 text-left"  style={{width: "640px", height: "48px"}}>
-//         What is your expereince with R Studio?
-//     </span>
-//     <p className="text-12 text-neutral-300">Options:1. High ......</p>
-//         </div> 
-//       }
-
-//     { 
-//     show1?<div className="wrapper display-flex flex flex-col items-left justify-center 
-//     py-5 text-neutral-500 text-light text-left font-regular dmsans">
-//       <p className="text-12 text-neutral-300">Question Name</p>
-//     <span className="bg-white text-neutral-500 text-light py-3 px-4 text-left"  style={{width: "640px", height: "48px"}}>
-//       Question Name
-//     </span>
-//     <p className="text-12 text-neutral-300">Options...</p>
-//     </div>:null
-//       }
-//       { 
-//     show2?<div className="wrapper display-flex flex flex-col items-left justify-center 
-//     py-5 text-neutral-500 text-light text-left font-regular dmsans">
-//       <p className="text-12 text-neutral-300">Question Name</p>
-//     <span className="bg-white text-neutral-500 text-light py-3 px-4 text-left"  style={{width: "640px", height: "48px"}}>
-//       Question Name
-//     </span>
-//     <p className="text-12 text-neutral-300">Options...</p>
-//     </div>:null
-//       }
-// </div>      
-
-//   </div>  
-//     <div className="flow-root items-center bg-transparent px-16 py-3">
-// <div class="float-right grid grid-cols-2">
-// <div>
-// <Link to="/Demo">
-// <button class=" float-right bg-transparent hover:bg-neutral-500 border border-neutral-500 hover:text-white text-base font-bold dmsans text-neutral-500 py-2 px-4 inline-flex items-center">
-// <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 -ml-1 w-6 h-6">
-//   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-// </svg>
-// Previous Step
-// </button>
-// </Link>  
-
-// </div>
-
-// <div>
-// <Link to="/Courseinfo">
-// <button class=" float-right bg-transparent hover:bg-neutral-500 border border-neutral-500 hover:text-white text-base font-bold dmsans text-neutral-500 py-2 px-4 inline-flex items-center">
-// Next Step
-// <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-// </button>
-// </Link>
-// </div>
-// </div>
-// </div>  
-
-// <Footer /> 
-       
-// </div>
-
- 
-//     );  
-// };
-
-// export default Schedulingch;
- */}

@@ -6,7 +6,7 @@ import React,{useState} from 'react';
 import { gapi } from "gapi-script";
 import { useContext } from 'react';
 import { storedFormId } from './formutils';
-
+import { useData } from './context';
 
 const Demo = () => {
 
@@ -85,8 +85,12 @@ gapi.load("client:auth2", function() {
   gapi.auth2.init({client_id: "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"});
 });
 
+
 const [activeButtons, setActiveButtons] = useState(Array(6).fill(false));
+const { setButtonActive } = useData();
+
 const handleButtonClick = async (buttonIndex) => {
+  setButtonActive(buttonIndex, !activeButtons[buttonIndex]);
   try {
     await loadClient();
 

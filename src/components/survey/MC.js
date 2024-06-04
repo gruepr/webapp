@@ -117,6 +117,11 @@ const MC = () => {
     });
   };
 
+  // const updateMCInfoData = (data) => {
+  //   setMCInfoData(data);
+  // };
+
+
   return (
     <div className="bg-white flow-root items-center px-16 py-1">
       <Header />

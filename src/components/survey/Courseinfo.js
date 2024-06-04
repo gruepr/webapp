@@ -6,7 +6,7 @@ import React,{useState, useEffect} from 'react';
 import InputForm from "./InputForm";
 import { gapi } from "gapi-script";
 import { storedFormId } from './formutils';
-
+import { useData } from './context';
 
 const CLIENT_ID = "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"
 const API_KEY = "AIzaSyClDnIa2ktzsPMWAe5mImig1YBYfJFWgjA"
@@ -113,7 +113,10 @@ const Courseinfo = () => {
 
   const [activeButtons, setActiveButtons] = useState(Array(6).fill(false));
 
+  const { setButtonActive, setCourseInfoData } = useData();
+
   const handleButtonClick = (buttonIndex) => {
+    setButtonActive(buttonIndex, !activeButtons[buttonIndex]);
     setActiveButtons((prevActiveButtons) =>
       prevActiveButtons.map((active, index) => {
         if (index === buttonIndex) {
@@ -132,7 +135,8 @@ const Courseinfo = () => {
       })
     );
   };
-  
+
+
   const handleAddQuestion = () => {
     const newQuestion = { id: questions.length + 1, question: '', options: [] };
     setQuestions((prevQuestions) => [...prevQuestions, newQuestion]);
@@ -294,11 +298,11 @@ const Courseinfo = () => {
             <p class="...">Classmates I want to avoid</p>
               <button
               className={`col-end-6 bg-primary-50${
-                activeButtons[1] ? 'active' : ''
+                activeButtons[2] ? 'active' : ''
               }`}
             >
               <label class="inline-flex relative items-center cursor-pointer" >
-              <input type="checkbox" value="" class="sr-only peer" onClick={() => handleButtonClick(1)} />
+              <input type="checkbox" value="" class="sr-only peer" onClick={() => handleButtonClick(2)} />
               <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
               dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full
               peer-checked:after:border-white after:content-[''] 
@@ -313,11 +317,11 @@ const Courseinfo = () => {
             <p class="...">Select from list of classmates</p>
               <button
               className={`col-end-6 bg-primary-50${
-                activeButtons[1] ? 'active' : ''
+                activeButtons[3] ? 'active' : ''
               }`}
             >
               <label class="inline-flex relative items-center cursor-pointer" >
-              <input type="checkbox" value="" class="sr-only peer" onClick={() => handleButtonClick(1)} />
+              <input type="checkbox" value="" class="sr-only peer" onClick={() => handleButtonClick(3)} />
               <div class="w-11 h-6 bg-neutral-300 rounded-full peer peer-focus:ring-primary-500 
               dark:peer-focus:ring-primary-500 peer-checked:after:translate-x-full
               peer-checked:after:border-white after:content-[''] 
@@ -375,9 +379,27 @@ const Courseinfo = () => {
           {activeButtons[1] && (
             <div className="wrapper display-flex flex flex-col items-left justify-center 
             py-5 text-neutral-500 text-light text-left font-regular dmsans">
-              <p className="text-12 text-neutral-300">Timezone</p>
+              <p className="text-12 text-neutral-300">Question</p>
               <span className="bg-white text-neutral-500 text-light py-3 px-4 text-left" style={{ width: "640px", height: "48px" }}>
-                Schedule
+              Classmates I want to work with
+              </span>
+            </div>
+          )}
+          {activeButtons[2] && (
+            <div className="wrapper display-flex flex flex-col items-left justify-center 
+            py-5 text-neutral-500 text-light text-left font-regular dmsans">
+              <p className="text-12 text-neutral-300">Question</p>
+              <span className="bg-white text-neutral-500 text-light py-3 px-4 text-left" style={{ width: "640px", height: "48px" }}>
+              Classmates I want to avoid
+              </span>
+            </div>
+          )}
+          {activeButtons[3] && (
+            <div className="wrapper display-flex flex flex-col items-left justify-center 
+            py-5 text-neutral-500 text-light text-left font-regular dmsans">
+              <p className="text-12 text-neutral-300">Question</p>
+              <span className="bg-white text-neutral-500 text-light py-3 px-4 text-left" style={{ width: "640px", height: "48px" }}>
+              Select from list of classmates
               </span>
             </div>
           )}
