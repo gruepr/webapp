@@ -1,7 +1,11 @@
 import React from "react";
 import { GoogleLogin } from 'react-google-login';
+import { C_ID, A_KEY, SCOP } from './config';
 
-const clientID = "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"
+
+const CLIENT_ID = {C_ID}
+const API_KEY = {A_KEY}
+const SCOPES = {SCOP}
 
 function Login() {
 
@@ -17,7 +21,7 @@ function Login() {
     return(
         <div id="signInButton">
             <GoogleLogin
-                clientId={clientID}
+                clientId={C_ID}
                 buttonText="Login"
                 onSuccess={onSuccess}
                 onFailure={onFailure}

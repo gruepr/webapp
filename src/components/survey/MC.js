@@ -130,7 +130,7 @@ const MC = () => {
       Multiple Choice Questions
       </div>
       
-      <div className="w-[43rem] h-[1.25rem] wrapper display-flex flex flex-col items-left justify-center
+      <div className="w-auto h-[1.25rem] wrapper display-flex flex flex-col items-left justify-center
       px-4 py-5 gap-6 text-neutral-500 bg-accent-50 text-12 text-left font-regular dmsans">
       Unsure of what to ask? Take a look at some example questions!
       </div>
@@ -139,7 +139,7 @@ const MC = () => {
 
       <div className="grid grid-cols-1 gap-4">
         {questions.map((question, index) => (
-          <div className="grid grid-cols-2 w-[43rem] h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-6 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans"
+          <div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-6 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans"
             key={question.id}
           >
             <h1 class="...">Question {question.id}</h1>
@@ -203,7 +203,7 @@ const MC = () => {
  {/* Add your Questions button... */}
           <button
             type="button"
-            className="w-[43rem] h-[1.25rem] wrapper display-flex items-center inline-flex px-4 py-5 gap-6 text-primary-500 bg-primary-50 text-light text-left font-regular dmsans"
+            className="w-auto h-[1.25rem] wrapper display-flex items-center inline-flex px-4 py-5 gap-6 text-primary-500 bg-primary-50 text-light text-left font-regular dmsans"
             onClick={() => {handleAddQuestion(); execute();}}
           >
                   

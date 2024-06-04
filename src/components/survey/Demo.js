@@ -8,15 +8,20 @@ import { useContext } from 'react';
 import { storedFormId } from './formutils';
 import { useData } from './context';
 
+import { C_ID, A_KEY, SCOP } from './config';
+
+
+const CLIENT_ID = {C_ID}
+const API_KEY = {A_KEY}
+const SCOPES = {SCOP}
+
 const Demo = () => {
 
 
-const CLIENT_ID = "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"
-const API_KEY = "AIzaSyClDnIa2ktzsPMWAe5mImig1YBYfJFWgjA"
-const SCOPES = "https://www.googleapis.com/auth/drive"
+
 /* https://www.googleapis.com/auth/drive.file - Use this scope instead of the above one*/ 
 function loadClient() {
-  gapi.client.setApiKey("AIzaSyClDnIa2ktzsPMWAe5mImig1YBYfJFWgjA");
+  gapi.client.setApiKey(A_KEY);
   return gapi.client.load("https://forms.googleapis.com/$discovery/rest?version=v1")
       .then(function() { console.log("GAPI client loaded for API"); },
             function(err) { console.error("Error loading GAPI client for API", err); });
@@ -82,7 +87,7 @@ function execute() {
             function(err) { console.error("Execute error", err); });
 }
 gapi.load("client:auth2", function() {
-  gapi.auth2.init({client_id: "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"});
+  gapi.auth2.init({client_id: C_ID});
 });
 
 
@@ -128,7 +133,7 @@ const handleButtonClick = async (buttonIndex) => {
 <div className="grid grid-cols-1 gap-4">
 {/* <div class="grid grid-cols-2 gap-4"> */}
 
-    <div className="grid grid-cols-2 w-[43rem] h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
+    <div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
     <h1 class="...">First Name*</h1>
 <button
             className={`col-end-6 bg-primary-50 ${
@@ -139,7 +144,7 @@ const handleButtonClick = async (buttonIndex) => {
 
 </button>
 </div>
-<div className="grid grid-cols-2 w-[43rem] h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
+<div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
           <h1 className="...">Last Name</h1>
           <button
             className={`col-end-6 bg-primary-50 ${
@@ -158,7 +163,7 @@ const handleButtonClick = async (buttonIndex) => {
 </div>
 
 
-<div className="grid grid-cols-2 w-[43rem]  h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
+<div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
     <h1 class="...">Email</h1>
 
     <button
@@ -181,7 +186,7 @@ const handleButtonClick = async (buttonIndex) => {
 </div>
 
 
-<div className="grid grid-cols-2 w-[43rem]  h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
+<div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
     <h1 class="...">Pronouns</h1>
     <button
             className={`col-end-6 bg-primary-50 ${
@@ -202,7 +207,7 @@ const handleButtonClick = async (buttonIndex) => {
 </script>
 </div>
 
-<div className="grid grid-cols-2 w-[43rem]  h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
+<div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
     <h1 class="...">Race</h1>
     <button
             className={`col-end-6 bg-primary-50 ${
@@ -224,7 +229,7 @@ const handleButtonClick = async (buttonIndex) => {
 </div>
 
 
-<div className="grid grid-cols-2 w-[43rem]  h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
+<div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans">
     <h1 class="...">Timezone</h1>
     <button
             className={`col-end-6 bg-primary-50 ${

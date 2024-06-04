@@ -7,14 +7,18 @@ import InputForm from "./InputForm";
 import { gapi } from "gapi-script";
 import { storedFormId } from './formutils';
 import { useData } from './context';
+import { C_ID, A_KEY, SCOP } from './config';
+
+
+const CLIENT_ID = {C_ID}
+const API_KEY = {A_KEY}
+const SCOPES = {SCOP}
 
 const UserContext = createContext()
-const CLIENT_ID = "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"
-const API_KEY = "AIzaSyClDnIa2ktzsPMWAe5mImig1YBYfJFWgjA"
-const SCOPES = "https://www.googleapis.com/auth/drive"
+
 /* https://www.googleapis.com/auth/drive.file - Use this scope instead of the above one*/ 
 function loadClient() {
-  gapi.client.setApiKey("AIzaSyClDnIa2ktzsPMWAe5mImig1YBYfJFWgjA");
+  gapi.client.setApiKey(A_KEY);
   return gapi.client.load("https://forms.googleapis.com/$discovery/rest?version=v1")
       .then(function() { console.log("GAPI client loaded for API"); },
             function(err) { console.error("Error loading GAPI client for API", err); });
@@ -94,7 +98,7 @@ function execute() {
             function(err) { console.error("Execute error", err); });
 }
 gapi.load("client:auth2", function() {
-  gapi.auth2.init({client_id: "185862281568-2hgglps5jv8erpobb8hl9h1i5ikkdps1.apps.googleusercontent.com"});
+  gapi.auth2.init({client_id: C_ID});
 });
 
 
@@ -153,7 +157,7 @@ const Schedulingch = () => {
       Scheduling Questions
       </div>
       
-      <div className="w-[43rem] h-[1.25rem] wrapper display-flex flex flex-col items-left justify-center
+      <div className="w-auto h-[1.25rem] wrapper display-flex flex flex-col items-left justify-center
       px-4 py-5 gap-6 text-neutral-500 bg-accent-50 text-12 text-left font-regular dmsans">
       Unsure of what to ask? Take a look at some example questions!
       </div>
@@ -161,7 +165,7 @@ const Schedulingch = () => {
       <div class="grid grid-cols-2 gap-2">
 
       <div className="grid grid-cols-1 gap-4">
-          <div className="grid grid-cols-2 w-[43rem] h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans"
+          <div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans"
           >
             <h1 class="...">Timezone</h1>
             
@@ -202,7 +206,7 @@ const Schedulingch = () => {
       </div>
 </div>
 
-<div className="grid grid-cols-2 w-[43rem] h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans"
+<div className="grid grid-cols-2 w-auto h-auto wrapper display-flex flex flex-col items-left justify-center px-4 py-5 gap-4 text-neutral-500 bg-primary-50 text-light text-left font-regular dmsans"
           >
             <h1 class="...">Schedule</h1>
               <button
